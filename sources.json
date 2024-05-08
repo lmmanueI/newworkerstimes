@@ -2,11 +2,6 @@
   "countries codes format":  "ISO 3166-1 alpha-2",
   "rss_feeds": [
     {
-      "host": "",
-      "language": "",
-      "link": ""
-    },
-    {
       "host": "021.rs",
       "language": "rs",
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.021.rs"
@@ -15,6 +10,11 @@
       "host": "abc.net.au",
       "language": "en",
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.abc.net.au&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "africanews.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.africanews.com&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "host": "aif.ru",
@@ -32,14 +32,89 @@
       "link": "https://rsshub.app/apnews/topics/world-news"
     },
     {
+      "host": "balkaninsight.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:balkaninsight.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
       "host": "bankier.pl",
       "language": "pl",
       "link": "https://www.bankier.pl/rss/wiadomosci.xml"
     },
     {
+      "host": "bnn-news.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:bnn-news.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "brusselstimes.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:brusselstimes.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "bssnews.net",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:bssnews.net&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "cbc.ca",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:cbc.ca&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "citynews.ca",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:citynews.ca&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
       "host": "cnn.com",
       "language": "en",
       "link": "http://rss.cnn.com/rss/cnn_latest.rss"
+    },
+    {
+      "host": "currenttime.tv",
+      "language": "ru",
+      "link": "https://www.currenttime.tv/api/zgbip_e_tpp_"
+    },
+    {
+      "host": "dailyfinland.fi",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:dailyfinland.fi&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "dailymail.co.uk",
+      "language": "en",
+      "link": "https://www.dailymail.co.uk/news/articles.rss"
+    },
+    {
+      "host": "dailysabah.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:dailysabah.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "dw.com",
+      "language": "de",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:dw.com&hl=de&gl=DE&ceid=DE:de"
+    },
+    {
+      "host": "ecfr.eu",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:24h+allinurl:ecfr.eu&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "economist.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:economist.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "eleconomista.com.mx",
+      "language": "es",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.eleconomista.com.mx&hl=es-419&gl=US&ceid=US:es-419"
+    },
+    {
+      "host": "elespanol.com",
+      "language": "es",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.elespanol.com&hl=es-419&gl=US&ceid=US:es-419"
     },
     {
       "host": "eldiariocantabria.publico.es",
@@ -48,8 +123,38 @@
     },
     {
       "host": "elpais.com",
+      "language": "es",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:elpais.com&hl=es-419&gl=US&ceid=US:es-419"
+    },
+    {
+      "host": "elperiodico.com",
+      "language": "es",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:elperiodico.com&hl=es-419&gl=US&ceid=US:es-419"
+    },
+    {
+      "host": "err.ee",
       "language": "en",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:elpais.com&hl=en-US&gl=US&ceid=US:en"
+      "link": "https://news.err.ee/rss"
+    },
+    {
+      "host": "euractiv.com",
+      "language": "en",
+      "link": "https://www.euractiv.com/?feed=mcfeed"
+    },
+    {
+      "host": "eurogamer.net",
+      "language": "en",
+      "link": "https://www.eurogamer.net/feed"
+    },
+    {
+      "host": "europapress.es",
+      "language": "es",
+      "link": "https://www.europapress.es/rss/rss.aspx"
+    },
+    {
+      "host": "financialexpress.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:financialexpress.com&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "host": "forbes.com",
@@ -57,9 +162,44 @@
       "link": "https://www.forbes.com/real-time/feed2/"
     },
     {
+      "host": "forbes.ru",
+      "language": "ru",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:forbes.ru&hl=ru&gl=RU&ceid=RU:ru"
+    },
+    {
+      "host": "foreignpolicy.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:foreignpolicy.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
       "host": "foxnews.com",
       "language": "en",
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:foxnews.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "france24.com",
+      "language": "fr",
+      "link": "https://www.france24.com/fr/rss"
+    },
+    {
+      "host": "gamesindustry.biz",
+      "language": "en",
+      "link": "https://www.gamesindustry.biz/feed"
+    },
+    {
+      "host": "gazeta.ru",
+      "language": "ru",
+      "link": "https://www.gazeta.ru/export/rss/first.xml"
+    },
+    {
+      "host": "greekcitytimes.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:greekcitytimes.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "greekreporter.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:greekreporter.com&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "host": "helsinkitimes.fi",
@@ -67,9 +207,39 @@
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:helsinkitimes.fi&hl=en-US&gl=US&ceid=US:en"
     },
     {
+      "host": "huffpost.com",
+      "language": "en",
+      "link": "https://www.huffpost.com/section/us-news/feed"
+    },
+    {
       "host": "independent.co.uk",
       "language": "en",
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.independent.co.uk&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "indiatoday.in",
+      "language": "en",
+      "link": "https://www.indiatoday.in/rss/home"
+    },
+    {
+      "host": "industriall-union.org",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.industriall-union.org&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "irishexaminer.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.irishexaminer.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "irishtimes.com",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:www.irishtimes.com&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "host": "iz.ru",
+      "language": "ru",
+      "link": "https://iz.ru/xml/rss/all.xml"
     },
     {
       "host": "kommersant.ru",
@@ -77,14 +247,49 @@
       "link": "https://www.kommersant.ru/RSS/news.xml"
     },
     {
+      "host": "lada.kz",
+      "language": "ru",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:lada.kz&hl=ru&gl=RU&ceid=RU:ru"
+    },
+    {
       "host": "larazon.es",
       "language": "es",
       "link": "https://www.larazon.es/rss/espana.xml"
     },
     {
+      "host": "",
+      "language": "",
+      "link": ""
+    },
+    {
+      "host": "ngs.ru",
+      "language": "ru",
+      "link": "https://ngs.ru/rss/"
+    },
+    {
+      "host": "nn.ru",
+      "language": "ru",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:nn.ru&hl=ru&gl=RU&ceid=RU:ru"
+    },
+    {
+      "host": "novinite.com",
+      "language": "en",
+      "link": "https://www.novinite.com/services/news_rdf.php"
+    },
+    {
+      "host": "nur.kz",
+      "language": "ru",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:nur.kz&hl=ru&gl=RU&ceid=RU:ru"
+    },
+    {
       "host": "nypost.com",
       "language": "en",
       "link": "https://nypost.com/news/feed/"
+    },
+    {
+      "host": "",
+      "language": "",
+      "link": ""
     },
     {
       "host": "publico.es",
@@ -99,7 +304,7 @@
     {
       "host": "talouselama.fi",
       "language": "fi",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:talouselama.fi&hl=en-US&gl=US&ceid=US:en"
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:talouselama.fi&hl=fi-FI&gl=FI&ceid=FI:fi"
     },
     {
       "host": "washingtonpost.com",
@@ -109,12 +314,12 @@
     {
       "host": "yle.fi",
       "language": "fi",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:yle.fi&hl=en-US&gl=US&ceid=US:en"
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:yle.fi&hl=fi-FI&gl=FI&ceid=FI:fi"
     },
     {
       "host": "zeit.de",
       "language": "de",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:zeit.de&hl=ru&gl=RU&ceid=RU:ru"
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:zeit.de&hl=de&gl=DE&ceid=DE:de"
     }
   ]
 }
