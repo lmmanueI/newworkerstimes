@@ -29,7 +29,7 @@
     {
       "host": "apnews.com",
       "language": "en",
-      "link": "https://rsshub.app/apnews/topics/world-news"
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "host": "balkaninsight.com",
@@ -57,9 +57,19 @@
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:bssnews.net&hl=en-US&gl=US&ceid=US:en"
     },
     {
+      "host": "businesstimes.com.sg/international",
+      "language": "en",
+      "link": "https://www.businesstimes.com.sg/rss/international"
+    },
+    {
+      "host": "businesstimes.com.sg/singapore",
+      "language": "en",
+      "link": "https://www.businesstimes.com.sg/rss/singapore"
+    },
+    {
       "host": "cbc.ca",
       "language": "en",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:cbc.ca&hl=en-US&gl=US&ceid=US:en"
+      "link": "https://www.cbc.ca/webfeed/rss/rss-canada"
     },
     {
       "host": "citynews.ca",
@@ -129,7 +139,27 @@
     {
       "host": "elpais.com",
       "language": "es",
-      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:elpais.com&hl=es-419&gl=US&ceid=US:es-419"
+      "link": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"
+    },
+    {
+      "host": "elpais.com/mexico",
+      "language": "es",
+      "link": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/mexico/portada"
+    },
+    {
+      "host": "elpais.com/america-colombia",
+      "language": "es",
+      "link": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america-colombia/portada"
+    },
+    {
+      "host": "elpais.com/chile",
+      "language": "es",
+      "link": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/chile/portada"
+    },
+    {
+      "host": "elpais.com/argentina",
+      "language": "es",
+      "link": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/argentina/portada"
     },
     {
       "host": "elperiodico.com",
@@ -402,6 +432,11 @@
       "link": "https://sputnik-georgia.ru/export/rss2/archive/index.xml"
     },
     {
+      "host": "spiegel.de",
+      "language": "de",
+      "link": "https://www.spiegel.de/schlagzeilen/index.rss"
+    },
+    {
       "host": "talouselama.fi",
       "language": "fi",
       "link": "https://news.google.com/rss/search?q=when:12h+allinurl:talouselama.fi&hl=fi-FI&gl=FI&ceid=FI:fi"
@@ -450,6 +485,11 @@
       "host": "ura.news",
       "language": "ru",
       "link": "https://ura.news/rss"
+    },
+    {
+      "host": "unitetheunion.org",
+      "language": "en",
+      "link": "https://news.google.com/rss/search?q=when:12h+allinurl:unitetheunion.org&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "host": "uusisuomi.fi",
