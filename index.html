@@ -55,7 +55,7 @@
 
             if (!content) {
                 cell.classList.add('red');
-            } else if (content.startsWith(today)) {
+            } else if (cell.textContent.startsWith(today)) {
                 cell.classList.add('green');
             } else {
                 cell.classList.add('yellow');
