@@ -73,14 +73,21 @@
                 .then(jsonData => {
                     jsonData.forEach(item => {
                         const row = document.createElement('tr');
+
                         const cell = document.createElement('td');
-                        cell.textContent = item.host;
+                        const link = document.createElement('a');
+                        link.href = item.url;
+                        link.textContent = item.host;
+                        link.target = '_blank';
+                        cell.appendChild(link);
                         row.appendChild(cell);
+
                         row.appendChild(createCell(item.last_not_empty_rss));
                         row.appendChild(createCell(item.last_filtered_by_keywords));
                         row.appendChild(createCell(item.last_approved_news));
                         row.appendChild(createCell(item.last_success_parsing));
                         row.appendChild(createCell(item.last_success_publishing));
+
                         tableBody.appendChild(row);
                     });
                 })
