@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Таблица с данными</title>
+    <title>Статистика обработки источников новостей</title>
     <style>
         table {
             width: 100%;
@@ -47,11 +47,12 @@
 
     <script>
         const tableBody = document.querySelector("#data-table tbody");
-        const today = new Date().toISOString().slice(0, 10);
+        const today = new Date().toLocaleString().slice(0, 10);
 
         function createCell(content) {
             const cell = document.createElement('td');
-            cell.textContent = content ? new Date(content).toLocaleString() : 'null';
+            cell.textContent = content ? new Date(content).toLocaleString() : '';
+
             if (!content) {
                 cell.classList.add('red');
             } else if (content.startsWith(today)) {
@@ -68,7 +69,9 @@
                 .then(jsonData => {
                     jsonData.forEach(item => {
                         const row = document.createElement('tr');
-                        row.appendChild(createCell(item.host));
+                        const cell = document.createElement('td');
+                        cell.textContent = item.host;
+                        row.appendChild(cell);
                         row.appendChild(createCell(item.last_not_empty_rss));
                         row.appendChild(createCell(item.last_filtered_by_keywords));
                         row.appendChild(createCell(item.last_approved_news));
