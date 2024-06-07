@@ -6,7 +6,29 @@ body {
     justify-content: center;
 }
 
+#header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+#back-to-list {
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+}
+
 .news-container {
+    margin-top: 60px; /* Space for the fixed header */
     max-width: 600px;
     width: 100%;
     padding: 20px;
@@ -32,9 +54,10 @@ body {
     color: #333;
 }
 
-.news-card h2 a {
+.news-card h2 span {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .news-card .summary {
