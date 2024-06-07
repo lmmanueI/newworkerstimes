@@ -104,15 +104,19 @@ function createNewsCard(news) {
     const card = document.createElement('div');
     card.className = 'news-card';
 
-    var title
-    if (news.country) {
-        title = `<h2>${news.country.flag} <span class="news-title" data-created="${news.created}">${news.title}</span></h2>`;
-    } else {
-        title = `<h2><span class="news-title" data-created="${news.created}">${news.title}</span></h2>`;
-    }
-    const image = `<img src="${news.image}" alt="${news.title}">`;
+    const cover = document.createElement('div');
+    cover.className = 'news-cover';
 
-    const summary = `<div class="summary">• ${news.summary.replace(/\n/g, '<br><br>• ')}</div>`;
+    const title = `<span class="news-title" data-created="${news.created}">${news.title}</span>`;
+    if (news.country) {
+        cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title + `<b>${news.country.flag}</b>`
+    } else {
+        cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title
+    }
+
+    const summary = document.createElement('div');
+    summary.className = 'summary';
+    summary.innerHTML = `•  ${news.summary.replace(/\n/g, '<br><br>•  ')}</div>`;
 
     const infoContainer = document.createElement('div');
     infoContainer.className = 'info-container';
@@ -120,7 +124,8 @@ function createNewsCard(news) {
     const sourceUrl = `<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a>`;
     infoContainer.innerHTML = sourceUrl + created;
 
-    card.innerHTML = title + image + summary;
+    card.appendChild(cover);
+    card.appendChild(summary);
     card.appendChild(infoContainer);
 
     return card
