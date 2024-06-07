@@ -80,6 +80,7 @@ function loadNews() {
 
             // Попробуем загрузить новости за предыдущий день в случае ошибки
             currentDate.setDate(currentDate.getDate() - 1);
+            loadNews();
         });
 }
 
