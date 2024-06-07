@@ -3,110 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Статистика обработки источников новостей</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-        th {
-            cursor: pointer;
-            position: sticky;
-            top: 0;
-            background-color: #f9f9f9;
-            z-index: 1;
-        }
-        .red {
-            background-color: #f8d7da;
-        }
-        .yellow {
-            background-color: #fff3cd;
-        }
-        .green {
-            background-color: #d4edda;
-        }
-    </style>
+    <title>Новости о забастовках</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <table id="data-table">
-        <thead>
-            <tr>
-                <th onclick="sortTable(0)">Host</th>
-                <th onclick="sortTable(1)">Last Not Empty RSS</th>
-                <th onclick="sortTable(2)">Last Filtered By Keywords</th>
-                <th onclick="sortTable(3)">Last Approved News</th>
-                <th onclick="sortTable(4)">Last Success Parsing</th>
-                <th onclick="sortTable(5)">Last Success Publishing</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Rows will be inserted here by JavaScript -->
-        </tbody>
-    </table>
-
-    <script>
-        const tableBody = document.querySelector("#data-table tbody");
-        const today = new Date().toLocaleString().slice(0, 10);
-
-        function createCell(content) {
-            const cell = document.createElement('td');
-            cell.textContent = content ? new Date(content).toLocaleString() : '';
-
-            if (!content) {
-                cell.classList.add('red');
-            } else if (cell.textContent.startsWith(today)) {
-                cell.classList.add('green');
-            } else {
-                cell.classList.add('yellow');
-            }
-            return cell;
-        }
-
-        function loadData() {
-            fetch('statistics.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    jsonData.forEach(item => {
-                        const row = document.createElement('tr');
-
-                        const cell = document.createElement('td');
-                        const link = document.createElement('a');
-                        link.href = item.url;
-                        link.textContent = item.host;
-                        link.target = '_blank';
-                        cell.appendChild(link);
-                        row.appendChild(cell);
-
-                        row.appendChild(createCell(item.last_not_empty_rss));
-                        row.appendChild(createCell(item.last_filtered_by_keywords));
-                        row.appendChild(createCell(item.last_approved_news));
-                        row.appendChild(createCell(item.last_success_parsing));
-                        row.appendChild(createCell(item.last_success_publishing));
-
-                        tableBody.appendChild(row);
-                    });
-                })
-                .catch(error => console.error('Error loading data:', error));
-        }
-
-        function sortTable(columnIndex) {
-            const table = document.getElementById("data-table");
-            const rows = Array.from(table.rows).slice(1);
-            const sortedRows = rows.sort((a, b) => {
-                const aText = a.cells[columnIndex].textContent;
-                const bText = b.cells[columnIndex].textContent;
-                return aText.localeCompare(bText);
-            });
-            sortedRows.forEach(row => tableBody.appendChild(row));
-        }
-
-        // Load data when the page loads
-        window.onload = loadData;
-    </script>
+    <div id="news-container" class="news-container">
+        <!-- Карточки новостей будут добавляться сюда -->
+    </div>
+    <div id="loading" class="loading">Загрузка...</div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
