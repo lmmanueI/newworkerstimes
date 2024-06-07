@@ -50,6 +50,12 @@ body {
     text-align: right;
 }
 
+.news-card .source-url {
+    padding: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
 .loading {
     text-align: center;
     padding: 20px;
@@ -61,4 +67,10 @@ body {
     font-size: 18px;
     margin: 20px 0;
     color: #666;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

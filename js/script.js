@@ -46,14 +46,20 @@ function loadNews() {
                 const card = document.createElement('div');
                 card.className = 'news-card';
 
-                const title = `<h2>${news.country.flag} <a href="${news.url}">${news.title}</a></h2>`;
+                const title = `<h2>${news.country.flag} ${news.title}</h2>`;
                 const image = `<img src="${news.image}" alt="${news.title}">`;
 
-                // Замена символов новой строки на <br>
                 const summary = `<div class="summary">• ${news.summary.replace(/\n/g, '<br><br>• ')}</div>`;
-                const created = `<div class="created">${new Date(news.created).toLocaleDateString()}</div>`;
 
-                card.innerHTML = title + image + summary + created;
+                const infoContainer = document.createElement('div');
+                infoContainer.className = 'info-container';
+                const created = `<div class="created">${new Date(news.created).toLocaleDateString()}</div>`;
+                const sourceUrl = `<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a>`;
+                infoContainer.innerHTML = sourceUrl + created;
+
+                card.innerHTML = title + image + summary;
+                card.appendChild(infoContainer);
+
                 container.appendChild(card);
             });
 
@@ -71,4 +77,21 @@ function loadNews() {
             // Попробуем загрузить новости за предыдущий день в случае ошибки
             currentDate.setDate(currentDate.getDate() - 1);
         });
+}
+
+function extractHostname(url) {
+    let hostname;
+    // Find & remove protocol (http, https) and get hostname
+    if (url.indexOf("//") > -1) {
+        hostname = url.split('/')[2];
+    } else {
+        hostname = url.split('/')[0];
+    }
+
+    // Find & remove port number
+    hostname = hostname.split(':')[0];
+    // Find & remove www
+    hostname = hostname.replace(/^www\./, '');
+
+    return hostname;
 }
