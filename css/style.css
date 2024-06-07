@@ -54,7 +54,7 @@ body {
 }
 
 .news-cover span {
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -69,35 +69,30 @@ body {
 
 .news-cover b {
     left: 20px;
-    top: 20px;
-    font-size: 60px;
+    top: 10px;
+    font-size: 50px;
     position: absolute;
     text-decoration: none;
     cursor: default;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 50%;
-    padding-top: 6px;
     text-align: center;
 }
 
 .news-card .summary {
     padding: 20px;
-    font-size: 16px;
+    font-size: 15px;
     color: #555;
 }
 
 .news-card .created {
     padding: 20px;
-    font-size: 14px;
+    font-size: 13px;
     color: #999;
     text-align: right;
 }
 
 .news-card .source-url {
     padding: 20px;
-    font-size: 14px;
+    font-size: 13px;
     color: #999;
 }
 
