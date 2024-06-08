@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica Neue, sans-serif, Arial;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: #f2f2f2;
 }
 
 #header {
-    background-color: #fff;
+    background-color: #f2f2f2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,7 +24,7 @@ body {
     padding: 10px 20px;
     font-size: 32px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #f2f2f2;
     border: 0;
 }
 
@@ -41,6 +42,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 800px;
+    background-color: white;
 }
 
 .news-cover {
@@ -65,6 +67,9 @@ body {
     width: (100% - 6px);
     text-decoration: none;
     cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: Arial;
 }
 
 .news-cover b {
@@ -79,8 +84,9 @@ body {
 
 .news-card .summary {
     padding: 20px;
-    font-size: 15px;
+    font-size: 16px;
     color: #555;
+    font-family: serif, Arial;
 }
 
 .news-card .created {
@@ -96,15 +102,14 @@ body {
     color: #999;
 }
 
-.loading {
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-}
-
 .date-label {
+    color: #262626;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font-size: 26px;
     margin: 20px 0;
     color: #666;
 }

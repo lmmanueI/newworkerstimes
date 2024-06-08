@@ -3,6 +3,15 @@ let loading = false;
 let lastLoadedDate = null;
 
 const urlHash = window.location.hash;
+const daysOfWeek = [
+  'воскресенье', 'понедельник', 'вторник', 'среда',
+  'четверг', 'пятница', 'суббота'
+];
+
+const months = [
+  'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+  'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+];
 
 document.addEventListener('DOMContentLoaded', () => {
     if (urlHash) {
@@ -25,7 +34,6 @@ function handleScroll() {
 function loadNews() {
     if (loading) return;
     loading = true;
-    document.getElementById('loading').style.display = 'block';
 
     const year = currentDate.getFullYear();
     const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
@@ -44,7 +52,9 @@ function loadNews() {
 
             data.sort((a, b) => new Date(b.created) - new Date(a.created));
 
-            const currentFormattedDate = currentDate.toLocaleDateString();
+            const dayOfWeek = daysOfWeek[currentDate.getDay()];
+            const month = months[currentDate.getMonth()];
+            const currentFormattedDate = `${currentDate.getDate()} ${month}, ${dayOfWeek}`;
             if (lastLoadedDate !== currentFormattedDate) {
                 const dateLabel = document.createElement('div');
                 dateLabel.className = 'date-label';
@@ -67,7 +77,6 @@ function loadNews() {
                 });
             });
 
-            document.getElementById('loading').style.display = 'none';
             loading = false;
 
             // Переключение на предыдущий день
@@ -75,7 +84,6 @@ function loadNews() {
         })
         .catch(error => {
             console.error('Error fetching news:', error);
-            document.getElementById('loading').style.display = 'none';
             loading = false;
 
             // Попробуем загрузить новости за предыдущий день в случае ошибки
@@ -135,7 +143,6 @@ function createNewsCard(news) {
 function loadSingleNews(timestamp) {
     if (loading) return;
     loading = true;
-    document.getElementById('loading').style.display = 'block';
 
     const date = new Date(parseInt(timestamp));
     const year = date.getFullYear();
@@ -161,12 +168,10 @@ function loadSingleNews(timestamp) {
 
             container.appendChild(createNewsCard(news));
 
-            document.getElementById('loading').style.display = 'none';
             loading = false;
         })
         .catch(error => {
             console.error('Error fetching news:', error);
-            document.getElementById('loading').style.display = 'none';
             loading = false;
         });
 }
