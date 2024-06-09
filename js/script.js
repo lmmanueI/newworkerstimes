@@ -15,6 +15,14 @@ const googleTranslate = 'https://translate.google.com/translate?hl=en&sl=auto&tl
 const timezoneOffset = currentDate.getTimezoneOffset() * 60 * 1000;
 const moscowOffset = 180 * 60 * 1000;
 
+window.addEventListener('popstate', function(event) {
+    if (window.location.hash) {
+        // open page
+    } else {
+        handleBackToList();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     if (urlHash) {
         loadSingleNews(urlHash.substring(1));
