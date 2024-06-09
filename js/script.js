@@ -7,11 +7,13 @@ const daysOfWeek = [
   'воскресенье', 'понедельник', 'вторник', 'среда',
   'четверг', 'пятница', 'суббота'
 ];
-
 const months = [
   'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
   'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
 ];
+const googleTranslate = 'https://translate.google.com/translate?hl=en&sl=auto&tl=ru&u='
+const timezoneOffset = currentDate.getTimezoneOffset() * 60 * 1000;
+const moscowOffset = 180 * 60 * 1000;
 
 document.addEventListener('DOMContentLoaded', () => {
     if (urlHash) {
@@ -81,6 +83,10 @@ function loadNews() {
 
             // Переключение на предыдущий день
             currentDate.setDate(currentDate.getDate() - 1);
+
+            if (document.querySelectorAll('.news-card').length < 5) {
+                loadNews();
+            }
         })
         .catch(error => {
             console.error('Error fetching news:', error);
@@ -109,7 +115,7 @@ function extractHostname(url) {
     return hostname;
 }
 
-function createNewsCard(news) {
+function createNewsCard(news, withSummary) {
     const card = document.createElement('div');
     card.className = 'news-card';
 
@@ -131,19 +137,25 @@ function createNewsCard(news) {
             cover.innerHTML = title
         }
     }
+    card.appendChild(cover);
 
-    const summary = document.createElement('div');
-    summary.className = 'summary';
-    summary.innerHTML = `•  ${news.summary.replace(/\n/g, '<br><br>•  ')}</div>`;
+    if (withSummary) {
+        const summary = document.createElement('div');
+        summary.className = 'summary';
+        summary.innerHTML = `•  ${news.summary.replace(/\n/g, '<br><br>•  ')}</div>`;
+        card.appendChild(summary);
+    }
 
     const infoContainer = document.createElement('div');
     infoContainer.className = 'info-container';
-    const created = `<div class="created">${new Date(news.created).toLocaleString()}</div>`;
-    const sourceUrl = `<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a>`;
-    infoContainer.innerHTML = sourceUrl + created;
-
-    card.appendChild(cover);
-    card.appendChild(summary);
+    const postTime = new Date(news.created).getTime() - moscowOffset - timezoneOffset;
+    const date = new Date(postTime);
+    const dayOfWeek = daysOfWeek[date.getDay()];
+    const month = months[date.getMonth()];
+    const created = `<div class="created">${date.getDate()} ${month} ${date.getFullYear()}, ${dayOfWeek}, ${date.getHours()}:${date.getMinutes()}</div>`;
+    const translationUrl = `<div><a class="translation-url" href="${googleTranslate}${encodeURI(news.url)}" target="_blank">🇷🇺</a>`;
+    const sourceUrl = `&nbsp;&nbsp;<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a></div>`;
+    infoContainer.innerHTML = translationUrl + sourceUrl + created;
     card.appendChild(infoContainer);
 
     return card
@@ -175,7 +187,7 @@ function loadSingleNews(timestamp) {
             const container = document.getElementById('news-container');
             container.innerHTML = ''; // Clear previous content
 
-            container.appendChild(createNewsCard(news));
+            container.appendChild(createNewsCard(news, true));
 
             loading = false;
         })
