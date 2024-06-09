@@ -114,13 +114,22 @@ function createNewsCard(news) {
     card.className = 'news-card';
 
     const cover = document.createElement('div');
-    cover.className = 'news-cover';
 
     const title = `<span class="news-title" data-created="${news.created}">${news.title}</span>`;
-    if (news.country) {
-        cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title + `<b>${news.country.flag}</b>`
+    if (news.image) {
+        cover.className = 'news-cover with-image';
+        if (news.country) {
+            cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title + `<b>${news.country.flag}</b>`
+        } else {
+            cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title
+        }
     } else {
-        cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title
+        cover.className = 'news-cover';
+        if (news.country) {
+            cover.innerHTML = `<span class="news-title" data-created="${news.created}">${news.country.flag} ${news.title}</span>`;
+        } else {
+            cover.innerHTML = title
+        }
     }
 
     const summary = document.createElement('div');
