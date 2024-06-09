@@ -160,7 +160,9 @@ function createNewsCard(news, withSummary) {
     const date = new Date(postTime);
     const dayOfWeek = daysOfWeek[date.getDay()];
     const month = months[date.getMonth()];
-    const created = `<div class="created">${date.getDate()} ${month}, ${dayOfWeek}, ${date.getHours()}:${date.getMinutes()}</div>`;
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const created = `<div class="created">${date.getDate()} ${month}, ${dayOfWeek}, ${hours}:${minutes}</div>`;
     const translationUrl = `<div><a class="translation-url" href="${googleTranslate}${encodeURI(news.url)}" target="_blank">🇷🇺</a>`;
     const sourceUrl = `&nbsp;&nbsp;<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a></div>`;
     infoContainer.innerHTML = translationUrl + sourceUrl + created;
