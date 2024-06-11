@@ -18,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 0;
+    max-width: 600px;
 }
 
 #back-to-list {
@@ -136,4 +137,14 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
+}
+
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-switcher select {
+    padding: 5px;
+    font-size: 16px;
 }

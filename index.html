@@ -19,6 +19,12 @@
 <body>
     <div id="header">
         <button id="back-to-list">✊</button>
+        <div class="language-switcher">
+            <select id="language-select" onchange="setLanguage()">
+                <option value="en">🇺🇸 English</option>
+                <option value="ru">🇷🇺 Русский</option>
+            </select>
+        </div>
     </div>
     <div id="news-container" class="news-container">
         <!-- Карточки новостей будут добавляться сюда -->

@@ -7,9 +7,17 @@ const daysOfWeek = [
   'воскресенье', 'понедельник', 'вторник', 'среда',
   'четверг', 'пятница', 'суббота'
 ];
+const daysOfWeekEn = [
+  'Sunday', 'Monday', 'Tuesday', 'Wednesday',
+  'Thursday', 'Friday', 'Saturday'
+];
 const months = [
   'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
   'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+];
+const monthsEn = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
 ];
 const googleTranslate = 'https://translate.google.com/translate?hl=en&sl=auto&tl=ru&u='
 const timezoneOffset = currentDate.getTimezoneOffset() * 60 * 1000;
@@ -24,6 +32,11 @@ window.addEventListener('popstate', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const lang = getCookie("language");
+    if (lang) {
+        document.getElementById("language-select").value = lang;
+    }
+
     if (urlHash) {
         loadSingleNews(urlHash.substring(1));
     } else {
@@ -62,8 +75,13 @@ function loadNews() {
 
             data.sort((a, b) => new Date(b.created) - new Date(a.created));
 
-            const dayOfWeek = daysOfWeek[currentDate.getDay()];
-            const month = months[currentDate.getMonth()];
+            let dayOfWeek = daysOfWeekEn[currentDate.getDay()];
+            let month = monthsEn[currentDate.getMonth()];
+            if (getCookie('language') == 'ru') {
+                dayOfWeek = daysOfWeek[currentDate.getDay()];
+                month = months[currentDate.getMonth()];
+            }
+
             const currentFormattedDate = `${currentDate.getDate()} ${month}, ${dayOfWeek}`;
             if (lastLoadedDate !== currentFormattedDate) {
                 const dateLabel = document.createElement('div');
@@ -124,23 +142,38 @@ function extractHostname(url) {
 }
 
 function createNewsCard(news, withSummary) {
+    const postTime = new Date(news.created).getTime() - moscowOffset - timezoneOffset;
+    const date = new Date(postTime);
+
     const card = document.createElement('div');
     card.className = 'news-card';
 
     const cover = document.createElement('div');
 
-    const title = `<span class="news-title" data-created="${news.created}">${news.title}</span>`;
+    let title_text = news.title_en;
+    let summary_text = news.summary_en;
+    let dayOfWeek = daysOfWeekEn[currentDate.getDay()];
+    let month = monthsEn[currentDate.getMonth()];
+
+    if (getCookie("language") == 'ru') {
+        title_text = news.title;
+        summary_text = news.summary;
+        dayOfWeek = daysOfWeek[currentDate.getDay()];
+        month = months[currentDate.getMonth()];
+    }
+
+    const title = `<span class="news-title" data-created="${news.created}">${title_text}</span>`;
     if (news.image) {
         cover.className = 'news-cover with-image';
         if (news.country) {
-            cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title + `<b>${news.country.flag}</b>`
+            cover.innerHTML = `<img src="${news.image}" alt="${title_text}">` + title + `<b>${news.country.flag}</b>`
         } else {
-            cover.innerHTML = `<img src="${news.image}" alt="${news.title}">` + title
+            cover.innerHTML = `<img src="${news.image}" alt="${title_text}">` + title
         }
     } else {
         cover.className = 'news-cover';
         if (news.country) {
-            cover.innerHTML = `<span class="news-title" data-created="${news.created}">${news.country.flag} ${news.title}</span>`;
+            cover.innerHTML = `<span class="news-title" data-created="${news.created}">${news.country.flag} ${title_text}</span>`;
         } else {
             cover.innerHTML = title
         }
@@ -150,20 +183,21 @@ function createNewsCard(news, withSummary) {
     if (withSummary) {
         const summary = document.createElement('div');
         summary.className = 'summary';
-        summary.innerHTML = `•  ${news.summary.replace(/\n/g, '<br><br>•  ')}</div>`;
+        summary.innerHTML = `•  ${summary_text.replace(/\n/g, '<br><br>•  ')}</div>`;
         card.appendChild(summary);
     }
 
     const infoContainer = document.createElement('div');
     infoContainer.className = 'info-container';
-    const postTime = new Date(news.created).getTime() - moscowOffset - timezoneOffset;
-    const date = new Date(postTime);
-    const dayOfWeek = daysOfWeek[date.getDay()];
-    const month = months[date.getMonth()];
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
     const created = `<div class="created">${date.getDate()} ${month}, ${dayOfWeek}, ${hours}:${minutes}</div>`;
-    const translationUrl = `<div><a class="translation-url" href="${googleTranslate}${encodeURI(news.url)}" target="_blank">🇷🇺</a>`;
+
+    let translationUrl = `<div>`;
+    if (getCookie("language") == 'ru') {
+        translationUrl = translationUrl + `<a class="translation-url" href="${googleTranslate}${encodeURI(news.url)}" target="_blank">🇷🇺</a>`
+    }
+
     const sourceUrl = `&nbsp;&nbsp;<a class="source-url" href="${news.url}" target="_blank">${extractHostname(news.url)}</a></div>`;
     infoContainer.innerHTML = translationUrl + sourceUrl + created;
     card.appendChild(infoContainer);
@@ -216,4 +250,43 @@ function handleBackToList() {
     loadNews(); // Load the list of news
     window.scrollTo(0, 0); // Scroll to the top
     window.addEventListener('scroll', handleScroll); // Re-attach the scroll event listener
+}
+
+function setLanguage() {
+    const select = document.getElementById("language-select");
+    const language = select.value;
+    if (language != getCookie('language')) {
+        setCookie("language", language, 365);
+        if (window.location.hash) {
+            loadSingleNews(urlHash.substring(1));
+        } else {
+            window.location.hash = ''; // Remove hash
+            const container = document.getElementById('news-container');
+            container.innerHTML = ''; // Clear current content
+            currentDate = new Date(); // Reset current date to today
+            lastLoadedDate = null;
+            loadNews(); // Load the list of news
+        }
+    }
+}
+
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
 }
