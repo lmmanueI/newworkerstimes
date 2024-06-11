@@ -29,6 +29,12 @@ body {
     border: 0;
 }
 
+#contact {
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+}
+
 .news-container {
     margin-top: 60px; /* Space for the fixed header */
     max-width: 600px;
