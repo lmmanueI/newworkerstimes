@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strike News Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #filters {
+            margin-top: 20px;
+        }
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .filter-item {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .filter-item.active {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Strike News Chart</h1>
+    <canvas id="strikeChart" width="800" height="400"></canvas>
+
+    <div id="filters">
+        <div id="countryFilters" class="filter-container"></div>
+        <div id="professionFilters" class="filter-container"></div>
+    </div>
+
+    <script>
+        // URL to fetch JSON data
+        const dataUrl = 'https://raw.githubusercontent.com/lmmanueI/newworkerstimes/github-pages/data/strikes_news/2024/06.json';
+
+        async function fetchData() {
+            try {
+                const response = await fetch(dataUrl);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        function initFilters(data) {
+            const countries = [...new Set(data.map(d => d.country))];
+            const professions = [...new Set(data.map(d => d.who))];
+
+            const countryFilters = document.getElementById('countryFilters');
+            const professionFilters = document.getElementById('professionFilters');
+
+            countries.forEach(country => {
+                const filterItem = document.createElement('div');
+                filterItem.className = 'filter-item active';
+                filterItem.textContent = country;
+                filterItem.dataset.value = country;
+                countryFilters.appendChild(filterItem);
+            });
+
+            professions.forEach(profession => {
+                const filterItem = document.createElement('div');
+                filterItem.className = 'filter-item active';
+                filterItem.textContent = profession;
+                filterItem.dataset.value = profession;
+                professionFilters.appendChild(filterItem);
+            });
+
+            document.querySelectorAll('.filter-item').forEach(item => {
+                item.addEventListener('click', toggleFilterItem);
+            });
+        }
+
+        function parseDate(dateString) {
+            const parsedDate = d3.timeParse("%Y-%m-%d %H:%M:%S.%f")(dateString);
+            if (!parsedDate) {
+                console.error('Error parsing date:', dateString);
+            }
+            return parsedDate;
+        }
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        function updateChart(data) {
+            const selectedCountries = Array.from(document.querySelectorAll('#countryFilters .filter-item.active')).map(item => item.dataset.value);
+            const selectedProfessions = Array.from(document.querySelectorAll('#professionFilters .filter-item.active')).map(item => item.dataset.value);
+
+            const filteredData = data.filter(d =>
+                (selectedCountries.length === 0 || selectedCountries.includes(d.country)) &&
+                (selectedProfessions.length === 0 || selectedProfessions.includes(d.who))
+            );
+
+            const newsByDate = d3.rollup(
+                filteredData,
+                v => v.length,
+                d => formatDate(parseDate(d.created))
+            );
+
+            const sortedNewsByDate = Array.from(newsByDate).sort((a, b) => new Date(a[0]) - new Date(b[0]));
+
+            strikeChart.data.labels = sortedNewsByDate.map(d => new Date(d[0]));
+            strikeChart.data.datasets[0].data = sortedNewsByDate.map(d => d[1]);
+            strikeChart.update();
+        }
+
+        function toggleFilterItem(event) {
+            event.target.classList.toggle('active');
+            updateChart(window.strikeData);
+        }
+
+        let strikeChart;
+        document.addEventListener('DOMContentLoaded', async () => {
+            const data = await fetchData();
+            if (data) {
+                window.strikeData = data;
+
+                initFilters(data);
+
+                const ctx = document.getElementById('strikeChart').getContext('2d');
+                strikeChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: 'Number of News Articles',
+                            data: [],
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            x: {
+                                type: 'time',
+                                time: {
+                                    unit: 'day',
+                                    tooltipFormat: 'PP'  // Format tooltip as 'Jun 1, 2024'
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Date'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Number of News Articles'
+                                }
+                            }
+                        }
+                    }
+                });
+
+                updateChart(data);
+            }
+        });
+    </script>
+</body>
+</html>
