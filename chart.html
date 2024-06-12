@@ -11,6 +11,14 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        #controls {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #intervalSelect {
+            margin-left: 10px;
+        }
         #filters {
             margin-top: 20px;
         }
@@ -32,145 +40,227 @@
     </style>
 </head>
 <body>
-    <h1>Strike News Chart</h1>
-    <canvas id="strikeChart" width="800" height="400"></canvas>
+<h1>Strike News Chart</h1>
+<div id="controls">
+    <label for="intervalSelect">Interval:</label>
+    <select id="intervalSelect">
+        <option value="day">Day</option>
+        <option value="week">Week</option>
+        <option value="month">Month</option>
+    </select>
+</div>
+<canvas id="strikeChart" width="800" height="200"></canvas>
 
-    <div id="filters">
-        <div id="countryFilters" class="filter-container"></div>
-        <div id="professionFilters" class="filter-container"></div>
-    </div>
+<div id="filters">
+    <div id="countryFilters" class="filter-container"></div>
+    <div id="professionFilters" class="filter-container"></div>
+</div>
 
-    <script>
-        // URL to fetch JSON data
-        const dataUrl = 'https://raw.githubusercontent.com/lmmanueI/newworkerstimes/github-pages/data/strikes_news/2024/06.json';
+<script>
+    // URL to fetch JSON data
+    const dataUrl = 'https://raw.githubusercontent.com/lmmanueI/newworkerstimes/github-pages/data/strikes_news/2024/06.json';
 
-        async function fetchData() {
-            try {
-                const response = await fetch(dataUrl);
-                const data = await response.json();
-                return data;
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
+    async function fetchData() {
+        try {
+            const response = await fetch(dataUrl);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Error fetching data:', error);
         }
+    }
 
-        function initFilters(data) {
-            const countries = [...new Set(data.map(d => d.country))];
-            const professions = [...new Set(data.map(d => d.who))];
+    function initFilters(data) {
+        const countries = [...new Set(data.map(d => d.country))];
+        const professions = [...new Set(data.map(d => d.who))];
 
-            const countryFilters = document.getElementById('countryFilters');
-            const professionFilters = document.getElementById('professionFilters');
+        const countryFilters = document.getElementById('countryFilters');
+        const professionFilters = document.getElementById('professionFilters');
 
-            countries.forEach(country => {
-                const filterItem = document.createElement('div');
-                filterItem.className = 'filter-item active';
-                filterItem.textContent = country;
-                filterItem.dataset.value = country;
-                countryFilters.appendChild(filterItem);
-            });
+        countries.forEach(country => {
+            const filterItem = document.createElement('div');
+            filterItem.className = 'filter-item active';
+            filterItem.textContent = country;
+            filterItem.dataset.value = country;
+            countryFilters.appendChild(filterItem);
+        });
 
-            professions.forEach(profession => {
-                const filterItem = document.createElement('div');
-                filterItem.className = 'filter-item active';
-                filterItem.textContent = profession;
-                filterItem.dataset.value = profession;
-                professionFilters.appendChild(filterItem);
-            });
+        professions.forEach(profession => {
+            const filterItem = document.createElement('div');
+            filterItem.className = 'filter-item active';
+            filterItem.textContent = profession;
+            filterItem.dataset.value = profession;
+            professionFilters.appendChild(filterItem);
+        });
 
-            document.querySelectorAll('.filter-item').forEach(item => {
-                item.addEventListener('click', toggleFilterItem);
-            });
+        document.querySelectorAll('.filter-item').forEach(item => {
+            item.addEventListener('click', toggleFilterItem);
+        });
+    }
+
+    function parseDate(dateString) {
+        const parsedDate = d3.timeParse("%Y-%m-%d %H:%M:%S.%f")(dateString);
+        if (!parsedDate) {
+            console.error('Error parsing date:', dateString);
         }
+        return parsedDate;
+    }
 
-        function parseDate(dateString) {
-            const parsedDate = d3.timeParse("%Y-%m-%d %H:%M:%S.%f")(dateString);
-            if (!parsedDate) {
-                console.error('Error parsing date:', dateString);
-            }
-            return parsedDate;
-        }
-
-        function formatDate(date) {
-            const year = date.getFullYear();
-            const month = String(date.getMonth() + 1).padStart(2, '0');
-            const day = String(date.getDate()).padStart(2, '0');
+    function formatDate(date, interval) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        if (interval === 'month') {
+            const lastDayOfMonth = new Date(year, date.getMonth() + 1, 0); // Get last day of the month
+            return `${lastDayOfMonth.getFullYear()}-${String(lastDayOfMonth.getMonth() + 1).padStart(2, '0')}-${String(lastDayOfMonth.getDate()).padStart(2, '0')}`;
+        } else if (interval === 'week') {
+            const weekEnd = d3.timeSunday(date);
+            const lastDayOfWeek = new Date(weekEnd.getFullYear(), weekEnd.getMonth(), weekEnd.getDate() + 7);
+            return `${lastDayOfWeek.getFullYear()}-${String(lastDayOfWeek.getMonth() + 1).padStart(2, '0')}-${String(lastDayOfWeek.getDate()).padStart(2, '0')}`;
+        } else {
             return `${year}-${month}-${day}`;
         }
+    }
 
-        function updateChart(data) {
-            const selectedCountries = Array.from(document.querySelectorAll('#countryFilters .filter-item.active')).map(item => item.dataset.value);
-            const selectedProfessions = Array.from(document.querySelectorAll('#professionFilters .filter-item.active')).map(item => item.dataset.value);
+     function getUniqueEvents(data) {
+        const uniqueEvents = new Map();
+        data.forEach(d => {
+            const date = parseDate(d.created);
+            const key = `${d.country}-${d.who}-${formatDate(date, 'day')}`;
+            if (!uniqueEvents.has(key)) {
+                uniqueEvents.set(key, d);
+            }
+        });
+        return Array.from(uniqueEvents.values());
+    }
 
-            const filteredData = data.filter(d =>
-                (selectedCountries.length === 0 || selectedCountries.includes(d.country)) &&
-                (selectedProfessions.length === 0 || selectedProfessions.includes(d.who))
-            );
+    function updateChart(data) {
+        const selectedCountries = Array.from(document.querySelectorAll('#countryFilters .filter-item.active')).map(item => item.dataset.value);
+        const selectedProfessions = Array.from(document.querySelectorAll('#professionFilters .filter-item.active')).map(item => item.dataset.value);
+        const interval = document.getElementById('intervalSelect').value;
 
-            const newsByDate = d3.rollup(
-                filteredData,
-                v => v.length,
-                d => formatDate(parseDate(d.created))
-            );
+        const filteredData = data.filter(d =>
+            (selectedCountries.length === 0 || selectedCountries.includes(d.country)) &&
+            (selectedProfessions.length === 0 || selectedProfessions.includes(d.who))
+        );
 
-            const sortedNewsByDate = Array.from(newsByDate).sort((a, b) => new Date(a[0]) - new Date(b[0]));
+        const uniqueEvents = getUniqueEvents(filteredData);
 
-            strikeChart.data.labels = sortedNewsByDate.map(d => new Date(d[0]));
-            strikeChart.data.datasets[0].data = sortedNewsByDate.map(d => d[1]);
-            strikeChart.update();
+        const newsByDate = d3.rollup(
+            uniqueEvents,
+            v => v.length,
+            d => {
+                const date = parseDate(d.created);
+                return date ? formatDate(date, interval) : null;
+            }
+        );
+
+        // Filter out invalid dates (null values)
+        const sortedNewsByDate = Array.from(newsByDate)
+            .filter(d => d[0] !== null)
+            .sort((a, b) => new Date(a[0]) - new Date(b[0]));
+
+        // Collecting tooltip information
+        const tooltipData = new Map();
+        uniqueEvents.forEach(d => {
+            const date = parseDate(d.created);
+            const formattedDate = formatDate(date, interval);
+            if (!tooltipData.has(formattedDate)) {
+                tooltipData.set(formattedDate, []);
+            }
+            tooltipData.get(formattedDate).push(`${d.country}: ${d.who}`);
+        });
+
+        // Sorting tooltip information
+        tooltipData.forEach((value, key) => {
+            value.sort();
+        });
+
+        strikeChart.data.labels = sortedNewsByDate.map(d => new Date(d[0]));
+        strikeChart.data.datasets[0].data = sortedNewsByDate.map(d => d[1]);
+
+        strikeChart.options.plugins.tooltip.callbacks.label = function(context) {
+            const date = context.label;
+            const formattedDate = formatDate(new Date(date), interval);
+            const events = tooltipData.get(formattedDate) || [];
+            return events;
+        };
+
+        strikeChart.options.plugins.tooltip.displayColors = false;
+
+        if (interval === 'month') {
+            strikeChart.options.scales.x.time.unit = 'month';
+            strikeChart.options.scales.x.time.displayFormats = {
+                month: 'MMMM yyyy'
+            };
+        } else if (interval === 'week') {
+            strikeChart.options.scales.x.time.unit = 'day';
+            strikeChart.options.scales.x.time.displayFormats = {
+                day: 'PP'
+            };
+        } else {
+            strikeChart.options.scales.x.time.unit = 'day';
+            strikeChart.options.scales.x.time.displayFormats = {
+                day: 'PP'
+            };
         }
 
-        function toggleFilterItem(event) {
-            event.target.classList.toggle('active');
-            updateChart(window.strikeData);
-        }
+        strikeChart.update();
+    }
 
-        let strikeChart;
-        document.addEventListener('DOMContentLoaded', async () => {
-            const data = await fetchData();
-            if (data) {
-                window.strikeData = data;
+    function toggleFilterItem(event) {
+        event.target.classList.toggle('active');
+        updateChart(window.strikeData);
+    }
 
-                initFilters(data);
+    let strikeChart;
+    document.addEventListener('DOMContentLoaded', async () => {
+        const data = await fetchData();
+        if (data) {
+            window.strikeData = data;
 
-                const ctx = document.getElementById('strikeChart').getContext('2d');
-                strikeChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [],
-                        datasets: [{
-                            label: 'Number of News Articles',
-                            data: [],
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            x: {
-                                type: 'time',
-                                time: {
-                                    unit: 'day',
-                                    tooltipFormat: 'PP'  // Format tooltip as 'Jun 1, 2024'
-                                },
-                                title: {
-                                    display: true,
-                                    text: 'Date'
-                                }
+            initFilters(data);
+
+            const ctx = document.getElementById('strikeChart').getContext('2d');
+            strikeChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Number of News Articles',
+                        data: [],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'day',
+                                tooltipFormat: 'PP'  // Format tooltip as 'Jun 1, 2024'
                             },
-                            y: {
-                                beginAtZero: true,
-                                title: {
-                                    display: true,
-                                    text: 'Number of News Articles'
-                                }
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Number of News Articles'
                             }
                         }
                     }
-                });
+                }
+            });
 
-                updateChart(data);
-            }
-        });
-    </script>
+            document.getElementById('intervalSelect').addEventListener('change', () => updateChart(data));
+            updateChart(data);
+        }
+    });
+</script>
 </body>
 </html>
