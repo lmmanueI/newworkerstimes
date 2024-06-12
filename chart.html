@@ -35,16 +35,29 @@
             gap: 10px;
             margin-top: 10px;
         }
-
         .filter-item {
-            padding: 10px 15px;
+            font-size: 30px;
+            display: inline-block;
+            padding: 15px;
             border: 1px solid #ccc;
             border-radius: 15px;
             cursor: pointer;
+            max-width: 100%;
+            overflow: hidden; /* Скрыть любой текст, выходящий за пределы элемента */
+            white-space: nowrap; /* Запретить перенос текста */
+        }
+        .filter-item.active {
+            background-color: #ccc;
+        }
+        @media (max-width: 600px) {
+            .filter-item {
+                flex: 1 1 100%;
+                text-align: center;
+            }
         }
 
         .flag {
-            font-size: 20px;
+            font-size: 60px;
         }
 
         .filter-item.active {
@@ -103,7 +116,7 @@
 
     function initFilters(data) {
         const countries = [...new Set(data.map(d => d.country))];
-        const professions = [...new Set(data.map(d => d.who))];
+        const professions = [...new Set(data.map(d => d.who))].sort();
 
         const countryFilters = document.getElementById('countryFilters');
         const professionFilters = document.getElementById('professionFilters');
