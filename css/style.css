@@ -29,8 +29,16 @@ body {
     border: 0;
 }
 
+#chart {
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 0;
+    text-decoration: none;
+}
+
 #contact {
-    margin-left: 20px;
     width: 32px;
     height: 32px;
 }
