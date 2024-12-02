@@ -1,39 +1,21 @@
 [
     {
-        "host": "elpais.com",
-        "url": "https://elpais.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:21.044129",
-        "last_filtered_by_keywords": "2024-12-02 05:00:25.380094",
-        "last_approved_news": "2024-12-02 04:52:16.779366",
-        "last_success_parsing": "2024-12-02 04:52:41.118506",
-        "last_success_publishing": "2024-12-02 04:53:47.851098"
+        "host": "sak.fi",
+        "url": "https://www.sak.fi/",
+        "last_not_empty_rss": "2024-12-02 07:20:37.225743",
+        "last_filtered_by_keywords": "2024-11-27 12:49:21.549153",
+        "last_approved_news": "2024-11-11 05:30:37.526000",
+        "last_success_parsing": "2024-11-11 05:30:55.646756",
+        "last_success_publishing": "2024-11-11 05:31:07.759945"
     },
     {
         "host": "elpais.com/argentina",
         "url": "https://elpais.com/argentina/?ed=arg",
-        "last_not_empty_rss": "2024-12-02 06:50:29.517043",
+        "last_not_empty_rss": "2024-12-02 07:30:14.791105",
         "last_filtered_by_keywords": "2024-12-01 04:50:18.839378",
         "last_approved_news": "2024-12-01 04:50:22.205971",
         "last_success_parsing": "2024-12-01 04:50:25.194044",
         "last_success_publishing": "2024-12-01 04:50:53.509292"
-    },
-    {
-        "host": "elpais.com/america-colombia",
-        "url": "https://elpais.com/america-colombia/?ed=col",
-        "last_not_empty_rss": "2024-12-02 06:50:29.560626",
-        "last_filtered_by_keywords": "2024-11-30 05:00:23.631165",
-        "last_approved_news": "2024-11-27 09:40:27.887574",
-        "last_success_parsing": "2024-11-27 09:40:30.711981",
-        "last_success_publishing": "2024-11-27 09:41:20.038598"
-    },
-    {
-        "host": "elpais.com/mexico",
-        "url": "https://elpais.com/mexico/?ed=mex",
-        "last_not_empty_rss": "2024-12-02 06:50:31.959011",
-        "last_filtered_by_keywords": "2024-12-02 05:00:28.572472",
-        "last_approved_news": "2024-11-27 05:01:00.622226",
-        "last_success_parsing": "2024-11-27 05:01:03.851065",
-        "last_success_publishing": "2024-11-27 05:01:41.454524"
     },
     {
         "host": "industriall-union.org",
@@ -45,15 +27,6 @@
         "last_success_publishing": "2024-07-30 10:31:07.701987"
     },
     {
-        "host": "sak.fi",
-        "url": "https://www.sak.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.094723",
-        "last_filtered_by_keywords": "2024-11-27 12:49:21.549153",
-        "last_approved_news": "2024-11-11 05:30:37.526000",
-        "last_success_parsing": "2024-11-11 05:30:55.646756",
-        "last_success_publishing": "2024-11-11 05:31:07.759945"
-    },
-    {
         "host": "infobae.com",
         "url": "https://www.infobae.com/",
         "last_not_empty_rss": "2024-11-27 15:51:43.750236",
@@ -63,9 +36,36 @@
         "last_success_publishing": "2024-10-07 13:11:30.794103"
     },
     {
+        "host": "elpais.com/mexico",
+        "url": "https://elpais.com/mexico/?ed=mex",
+        "last_not_empty_rss": "2024-12-02 07:20:19.262774",
+        "last_filtered_by_keywords": "2024-12-02 05:00:28.572472",
+        "last_approved_news": "2024-11-27 05:01:00.622226",
+        "last_success_parsing": "2024-11-27 05:01:03.851065",
+        "last_success_publishing": "2024-11-27 05:01:41.454524"
+    },
+    {
+        "host": "elpais.com/america-colombia",
+        "url": "https://elpais.com/america-colombia/?ed=col",
+        "last_not_empty_rss": "2024-12-02 07:20:24.158339",
+        "last_filtered_by_keywords": "2024-11-30 05:00:23.631165",
+        "last_approved_news": "2024-11-27 09:40:27.887574",
+        "last_success_parsing": "2024-11-27 09:40:30.711981",
+        "last_success_publishing": "2024-11-27 09:41:20.038598"
+    },
+    {
+        "host": "elpais.com",
+        "url": "https://elpais.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:24.770700",
+        "last_filtered_by_keywords": "2024-12-02 05:00:25.380094",
+        "last_approved_news": "2024-12-02 04:52:16.779366",
+        "last_success_parsing": "2024-12-02 04:52:41.118506",
+        "last_success_publishing": "2024-12-02 04:53:47.851098"
+    },
+    {
         "host": "metropolitano.gal",
         "url": "https://metropolitano.gal/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.381081",
+        "last_not_empty_rss": "2024-12-02 07:20:30.792867",
         "last_filtered_by_keywords": "2024-11-29 10:00:31.027414",
         "last_approved_news": "2024-11-27 16:30:36.500089",
         "last_success_parsing": "2024-11-27 16:30:44.010362",
@@ -92,7 +92,7 @@
     {
         "host": "elpais.com/chile",
         "url": "https://elpais.com/chile/?ed=chl",
-        "last_not_empty_rss": "2024-12-02 06:50:34.796054",
+        "last_not_empty_rss": "2024-12-02 07:20:22.393041",
         "last_filtered_by_keywords": "2024-12-02 04:50:50.998915",
         "last_approved_news": "2024-11-09 05:00:28.117019",
         "last_success_parsing": "2024-11-09 05:00:30.670143",
@@ -101,7 +101,7 @@
     {
         "host": "err.ee",
         "url": "https://www.err.ee/",
-        "last_not_empty_rss": "2024-12-02 07:00:19.646318",
+        "last_not_empty_rss": "2024-12-02 07:20:24.286805",
         "last_filtered_by_keywords": "2024-12-01 20:40:26.466419",
         "last_approved_news": "2024-12-01 20:30:23.530318",
         "last_success_parsing": "2024-12-01 20:30:29.360093",
@@ -137,83 +137,56 @@
     {
         "host": "time.kz",
         "url": "https://time.kz/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.469541",
+        "last_not_empty_rss": "2024-12-02 07:20:31.475930",
         "last_filtered_by_keywords": "2024-11-15 14:00:33.936418",
         "last_approved_news": null,
         "last_success_parsing": null,
         "last_success_publishing": null
     },
     {
-        "host": "financialexpress.com",
-        "url": "https://www.financialexpress.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:33.409983",
-        "last_filtered_by_keywords": "2024-12-01 09:20:23.750192",
-        "last_approved_news": "2024-11-22 11:00:37.505893",
-        "last_success_parsing": "2024-11-22 08:55:52.484687",
-        "last_success_publishing": "2024-11-22 07:40:54.932013"
+        "host": "montrealgazette.com",
+        "url": "https://montrealgazette.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:36.233051",
+        "last_filtered_by_keywords": "2024-11-30 23:20:26.949606",
+        "last_approved_news": "2024-11-30 01:20:39.361891",
+        "last_success_parsing": "2024-11-30 01:30:57.784157",
+        "last_success_publishing": "2024-11-30 01:31:38.331380"
     },
     {
-        "host": "gazeta.ru",
-        "url": "https://www.gazeta.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:34.536012",
-        "last_filtered_by_keywords": null,
-        "last_approved_news": null,
-        "last_success_parsing": null,
-        "last_success_publishing": null
+        "host": "molisenetwork.net",
+        "url": "https://www.molisenetwork.net/",
+        "last_not_empty_rss": "2024-12-02 07:10:40.747271",
+        "last_filtered_by_keywords": "2024-11-30 04:40:31.492581",
+        "last_approved_news": "2024-11-30 04:40:34.494584",
+        "last_success_parsing": "2024-11-30 04:40:52.206334",
+        "last_success_publishing": "2024-11-30 04:41:39.761746"
     },
     {
-        "host": "euractiv.com",
-        "url": "http://www.euractiv.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:34.782414",
-        "last_filtered_by_keywords": "2024-12-02 06:40:33.847325",
-        "last_approved_news": "2024-12-02 06:00:26.159083",
-        "last_success_parsing": "2024-12-02 06:10:31.900794",
-        "last_success_publishing": "2024-12-02 06:10:41.393184"
+        "host": "zab.tv",
+        "url": "https://zab.tv/",
+        "last_not_empty_rss": "2024-12-02 07:20:36.859460",
+        "last_filtered_by_keywords": "2024-11-27 09:00:42.560211",
+        "last_approved_news": "2024-10-24 07:00:43.494969",
+        "last_success_parsing": "2024-10-24 07:00:46.743324",
+        "last_success_publishing": "2024-10-24 07:00:55.359701"
     },
     {
-        "host": "france24.com",
-        "url": "https://www.france24.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.001113",
-        "last_filtered_by_keywords": "2024-12-01 18:00:33.258323",
-        "last_approved_news": "2024-11-29 12:20:29.050638",
-        "last_success_parsing": "2024-11-29 12:30:32.791488",
-        "last_success_publishing": "2024-11-29 12:30:41.102201"
+        "host": "trojmiasto.pl",
+        "url": "https://www.trojmiasto.pl/",
+        "last_not_empty_rss": "2024-12-02 07:20:38.015238",
+        "last_filtered_by_keywords": "2024-11-25 07:10:34.090461",
+        "last_approved_news": "2024-10-02 17:30:41.001962",
+        "last_success_parsing": "2024-10-02 17:42:18.726183",
+        "last_success_publishing": "2024-10-02 17:42:36.368597"
     },
     {
-        "host": "irishtimes.com",
-        "url": "https://www.irishtimes.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.739295",
-        "last_filtered_by_keywords": "2024-11-30 05:40:28.169836",
-        "last_approved_news": "2024-11-25 18:10:32.336949",
-        "last_success_parsing": "2024-11-25 18:10:50.355283",
-        "last_success_publishing": "2024-11-25 18:11:32.458575"
-    },
-    {
-        "host": "forbes.ru",
-        "url": "https://www.forbes.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.893378",
-        "last_filtered_by_keywords": "2024-11-30 07:30:24.856617",
-        "last_approved_news": "2024-10-05 06:10:31.064576",
-        "last_success_parsing": "2024-10-05 06:49:20.803088",
-        "last_success_publishing": "2024-10-05 06:49:34.343466"
-    },
-    {
-        "host": "helsinkitimes.fi",
-        "url": "https://www.helsinkitimes.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.949336",
-        "last_filtered_by_keywords": "2024-11-26 15:40:34.294613",
-        "last_approved_news": "2024-11-25 04:10:25.757036",
-        "last_success_parsing": "2024-11-25 04:10:43.498837",
-        "last_success_publishing": "2024-11-25 04:10:54.327363"
-    },
-    {
-        "host": "foxnews.com",
-        "url": "https://www.foxnews.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.229552",
-        "last_filtered_by_keywords": "2024-12-01 09:20:24.608915",
-        "last_approved_news": "2024-11-28 00:50:30.366375",
-        "last_success_parsing": "2024-10-31 14:50:46.472395",
-        "last_success_publishing": "2024-10-17 07:30:59.357540"
+        "host": "wsj.com",
+        "url": "https://www.wsj.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:39.012857",
+        "last_filtered_by_keywords": "2024-12-01 14:10:31.993205",
+        "last_approved_news": "2024-11-24 20:20:41.422254",
+        "last_success_parsing": "2024-08-14 13:20:45.562735",
+        "last_success_publishing": "2024-08-14 13:21:02.345726"
     },
     {
         "host": "ecfr.eu",
@@ -227,20 +200,11 @@
     {
         "host": "mirror.co.uk",
         "url": "https://www.mirror.co.uk/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.262018",
+        "last_not_empty_rss": "2024-12-02 07:20:39.094711",
         "last_filtered_by_keywords": "2024-12-01 21:50:32.855130",
         "last_approved_news": "2024-11-28 09:50:32.111483",
         "last_success_parsing": "2024-11-28 10:00:55.334322",
         "last_success_publishing": "2024-11-28 10:01:35.621145"
-    },
-    {
-        "host": "ru.investing.com",
-        "url": "https://ru.investing.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.691604",
-        "last_filtered_by_keywords": "2024-11-30 06:00:34.731518",
-        "last_approved_news": "2024-11-03 07:10:40.944659",
-        "last_success_parsing": "2024-11-03 07:10:59.090946",
-        "last_success_publishing": "2024-11-03 07:11:08.019044"
     },
     {
         "host": "foreignpolicy.com",
@@ -252,175 +216,166 @@
         "last_success_publishing": "2024-09-28 10:41:02.673999"
     },
     {
-        "host": "tribuneindia.com",
-        "url": "https://www.tribuneindia.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.228019",
-        "last_filtered_by_keywords": "2024-12-01 02:30:34.401750",
-        "last_approved_news": "2024-11-07 10:20:44.746837",
-        "last_success_parsing": "2024-11-07 10:38:16.866300",
-        "last_success_publishing": "2024-11-07 10:38:26.155397"
+        "host": "aif.ru",
+        "url": "https://aif.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:21.027670",
+        "last_filtered_by_keywords": "2024-12-02 07:10:23.874360",
+        "last_approved_news": "2024-12-02 00:50:18.176982",
+        "last_success_parsing": "2024-12-02 00:50:22.604641",
+        "last_success_publishing": "2024-12-02 00:50:29.949936"
     },
     {
-        "host": "orda.kz",
-        "url": "https://orda.kz/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.470215",
-        "last_filtered_by_keywords": "2024-12-01 01:00:32.670401",
-        "last_approved_news": "2024-11-29 15:11:07.992539",
-        "last_success_parsing": "2024-11-29 12:51:17.929144",
-        "last_success_publishing": "2024-11-29 12:51:36.849086"
-    },
-    {
-        "host": "jornada.com.mx",
-        "url": "https://www.jornada.com.mx/",
-        "last_not_empty_rss": "2024-12-02 06:50:39.188955",
-        "last_filtered_by_keywords": "2024-12-01 07:10:28.363539",
-        "last_approved_news": "2024-11-30 03:50:29.991085",
-        "last_success_parsing": "2024-11-30 03:50:52.304164",
-        "last_success_publishing": "2024-11-30 03:51:30.036999"
-    },
-    {
-        "host": "indiatoday.in",
-        "url": "https://www.indiatoday.in/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.062551",
-        "last_filtered_by_keywords": "2024-12-02 03:30:30.797280",
-        "last_approved_news": "2024-11-30 22:40:27.617125",
-        "last_success_parsing": "2024-11-30 23:10:31.595974",
-        "last_success_publishing": "2024-11-30 23:13:43.997726"
-    },
-    {
-        "host": "zab.tv",
-        "url": "https://zab.tv/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.750234",
-        "last_filtered_by_keywords": "2024-11-27 09:00:42.560211",
-        "last_approved_news": "2024-10-24 07:00:43.494969",
-        "last_success_parsing": "2024-10-24 07:00:46.743324",
-        "last_success_publishing": "2024-10-24 07:00:55.359701"
-    },
-    {
-        "host": "molisenetwork.net",
-        "url": "https://www.molisenetwork.net/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.300583",
-        "last_filtered_by_keywords": "2024-11-30 04:40:31.492581",
-        "last_approved_news": "2024-11-30 04:40:34.494584",
-        "last_success_parsing": "2024-11-30 04:40:52.206334",
-        "last_success_publishing": "2024-11-30 04:41:39.761746"
-    },
-    {
-        "host": "trojmiasto.pl",
-        "url": "https://www.trojmiasto.pl/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.400558",
-        "last_filtered_by_keywords": "2024-11-25 07:10:34.090461",
-        "last_approved_news": "2024-10-02 17:30:41.001962",
-        "last_success_parsing": "2024-10-02 17:42:18.726183",
-        "last_success_publishing": "2024-10-02 17:42:36.368597"
-    },
-    {
-        "host": "dw.com",
-        "url": "https://www.dw.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:20.891583",
-        "last_filtered_by_keywords": "2024-11-30 09:40:23.281280",
-        "last_approved_news": "2024-11-27 11:30:31.782386",
-        "last_success_parsing": null,
-        "last_success_publishing": null
+        "host": "france24.com",
+        "url": "https://www.france24.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:23.860762",
+        "last_filtered_by_keywords": "2024-12-01 18:00:33.258323",
+        "last_approved_news": "2024-11-29 12:20:29.050638",
+        "last_success_parsing": "2024-11-29 12:30:32.791488",
+        "last_success_publishing": "2024-11-29 12:30:41.102201"
     },
     {
         "host": "europapress.es",
         "url": "https://www.europapress.es/",
-        "last_not_empty_rss": "2024-12-02 07:00:20.973220",
+        "last_not_empty_rss": "2024-12-02 07:20:25.445783",
         "last_filtered_by_keywords": "2024-11-30 22:10:27.598252",
         "last_approved_news": "2024-11-30 09:20:27.753752",
         "last_success_parsing": "2024-11-30 09:20:30.755141",
         "last_success_publishing": "2024-11-30 09:21:35.121878"
     },
     {
-        "host": "kommersant.ru",
-        "url": "https://www.kommersant.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:46.127677",
-        "last_filtered_by_keywords": "2024-12-02 02:50:29.947115",
-        "last_approved_news": "2024-12-01 13:40:37.569080",
-        "last_success_parsing": "2024-12-01 13:40:41.021748",
-        "last_success_publishing": "2024-12-01 13:41:37.872592"
+        "host": "eurogamer.net",
+        "url": "https://www.eurogamer.net/",
+        "last_not_empty_rss": "2024-12-02 07:20:25.570654",
+        "last_filtered_by_keywords": "2024-11-26 11:00:27.623770",
+        "last_approved_news": "2024-11-15 17:50:28.243697",
+        "last_success_parsing": "2024-11-15 17:51:00.347113",
+        "last_success_publishing": "2024-11-15 17:51:10.468966"
     },
     {
-        "host": "montrealgazette.com",
-        "url": "https://montrealgazette.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:48.292186",
-        "last_filtered_by_keywords": "2024-11-30 23:20:26.949606",
-        "last_approved_news": "2024-11-30 01:20:39.361891",
-        "last_success_parsing": "2024-11-30 01:30:57.784157",
-        "last_success_publishing": "2024-11-30 01:31:38.331380"
+        "host": "foxnews.com",
+        "url": "https://www.foxnews.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:25.674532",
+        "last_filtered_by_keywords": "2024-12-01 09:20:24.608915",
+        "last_approved_news": "2024-11-28 00:50:30.366375",
+        "last_success_parsing": "2024-10-31 14:50:46.472395",
+        "last_success_publishing": "2024-10-17 07:30:59.357540"
     },
     {
-        "host": "publico.es",
-        "url": "https://publico.es/",
-        "last_not_empty_rss": "2024-12-02 06:51:00.420876",
-        "last_filtered_by_keywords": "2024-12-01 20:40:33.487658",
-        "last_approved_news": "2024-11-30 21:10:57.031361",
-        "last_success_parsing": "2024-11-30 21:31:06.371833",
-        "last_success_publishing": "2024-11-30 21:31:37.500141"
+        "host": "financialexpress.com",
+        "url": "https://www.financialexpress.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:26.558465",
+        "last_filtered_by_keywords": "2024-12-01 09:20:23.750192",
+        "last_approved_news": "2024-11-22 11:00:37.505893",
+        "last_success_parsing": "2024-11-22 08:55:52.484687",
+        "last_success_publishing": "2024-11-22 07:40:54.932013"
+    },
+    {
+        "host": "gazeta.ru",
+        "url": "https://www.gazeta.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:26.592365",
+        "last_filtered_by_keywords": null,
+        "last_approved_news": null,
+        "last_success_parsing": null,
+        "last_success_publishing": null
     },
     {
         "host": "gamesindustry.biz",
         "url": "https://www.gamesindustry.biz/",
-        "last_not_empty_rss": "2024-12-02 06:51:39.161080",
+        "last_not_empty_rss": "2024-12-02 07:20:27.142705",
         "last_filtered_by_keywords": "2024-11-25 18:40:24.269380",
         "last_approved_news": "2024-11-25 16:10:34.365590",
         "last_success_parsing": "2024-11-25 16:10:40.904608",
         "last_success_publishing": "2024-11-25 16:11:27.984864"
     },
     {
-        "host": "wsj.com",
-        "url": "https://www.wsj.com/",
-        "last_not_empty_rss": "2024-12-02 06:51:40.886549",
-        "last_filtered_by_keywords": "2024-12-01 14:10:31.993205",
-        "last_approved_news": "2024-11-24 20:20:41.422254",
-        "last_success_parsing": "2024-08-14 13:20:45.562735",
-        "last_success_publishing": "2024-08-14 13:21:02.345726"
+        "host": "euractiv.com",
+        "url": "http://www.euractiv.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:27.261464",
+        "last_filtered_by_keywords": "2024-12-02 06:40:33.847325",
+        "last_approved_news": "2024-12-02 06:00:26.159083",
+        "last_success_parsing": "2024-12-02 06:10:31.900794",
+        "last_success_publishing": "2024-12-02 06:10:41.393184"
     },
     {
-        "host": "nypost.com",
-        "url": "https://nypost.com/",
-        "last_not_empty_rss": "2024-12-02 06:52:09.000236",
-        "last_filtered_by_keywords": "2024-12-02 03:31:33.045807",
-        "last_approved_news": "2024-12-01 23:53:00.141973",
-        "last_success_parsing": "2024-12-01 23:58:11.518165",
-        "last_success_publishing": "2024-12-01 23:58:20.439112"
+        "host": "indiatoday.in",
+        "url": "https://www.indiatoday.in/",
+        "last_not_empty_rss": "2024-12-02 07:20:28.594663",
+        "last_filtered_by_keywords": "2024-12-02 03:30:30.797280",
+        "last_approved_news": "2024-11-30 22:40:27.617125",
+        "last_success_parsing": "2024-11-30 23:10:31.595974",
+        "last_success_publishing": "2024-11-30 23:13:43.997726"
     },
     {
-        "host": "dailysabah.com",
-        "url": "https://www.dailysabah.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:13.237219",
-        "last_filtered_by_keywords": "2024-12-01 14:10:20.844795",
-        "last_approved_news": "2024-12-01 14:10:23.272224",
-        "last_success_parsing": "2024-12-01 14:10:42.003446",
-        "last_success_publishing": "2024-12-01 14:10:57.289407"
+        "host": "jornada.com.mx",
+        "url": "https://www.jornada.com.mx/",
+        "last_not_empty_rss": "2024-12-02 07:20:28.868970",
+        "last_filtered_by_keywords": "2024-12-01 07:10:28.363539",
+        "last_approved_news": "2024-11-30 03:50:29.991085",
+        "last_success_parsing": "2024-11-30 03:50:52.304164",
+        "last_success_publishing": "2024-11-30 03:51:30.036999"
     },
     {
-        "host": "021.rs",
-        "url": "https://www.021.rs/",
-        "last_not_empty_rss": "2024-12-02 07:00:11.993597",
-        "last_filtered_by_keywords": "2024-12-02 07:00:14.081311",
-        "last_approved_news": null,
-        "last_success_parsing": null,
-        "last_success_publishing": null
+        "host": "irishtimes.com",
+        "url": "https://www.irishtimes.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:29.557988",
+        "last_filtered_by_keywords": "2024-11-30 05:40:28.169836",
+        "last_approved_news": "2024-11-25 18:10:32.336949",
+        "last_success_parsing": "2024-11-25 18:10:50.355283",
+        "last_success_publishing": "2024-11-25 18:11:32.458575"
     },
     {
-        "host": "aif.ru",
-        "url": "https://aif.ru/",
-        "last_not_empty_rss": "2024-12-02 07:00:14.882679",
-        "last_filtered_by_keywords": "2024-12-02 06:50:26.886089",
-        "last_approved_news": "2024-12-02 00:50:18.176982",
-        "last_success_parsing": "2024-12-02 00:50:22.604641",
-        "last_success_publishing": "2024-12-02 00:50:29.949936"
+        "host": "forbes.ru",
+        "url": "https://www.forbes.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:29.854820",
+        "last_filtered_by_keywords": "2024-11-30 07:30:24.856617",
+        "last_approved_news": "2024-10-05 06:10:31.064576",
+        "last_success_parsing": "2024-10-05 06:49:20.803088",
+        "last_success_publishing": "2024-10-05 06:49:34.343466"
     },
     {
-        "host": "aljazeera.com",
-        "url": "https://www.aljazeera.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:15.002124",
-        "last_filtered_by_keywords": "2024-12-01 21:10:10.841546",
-        "last_approved_news": "2024-11-30 03:10:28.435720",
-        "last_success_parsing": "2024-11-30 03:10:33.038504",
-        "last_success_publishing": "2024-11-30 03:10:43.554062"
+        "host": "orda.kz",
+        "url": "https://orda.kz/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.088333",
+        "last_filtered_by_keywords": "2024-12-01 01:00:32.670401",
+        "last_approved_news": "2024-11-29 15:11:07.992539",
+        "last_success_parsing": "2024-11-29 12:51:17.929144",
+        "last_success_publishing": "2024-11-29 12:51:36.849086"
+    },
+    {
+        "host": "kommersant.ru",
+        "url": "https://www.kommersant.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:33.122415",
+        "last_filtered_by_keywords": "2024-12-02 07:00:26.754029",
+        "last_approved_news": "2024-12-01 13:40:37.569080",
+        "last_success_parsing": "2024-12-01 13:40:41.021748",
+        "last_success_publishing": "2024-12-01 13:41:37.872592"
+    },
+    {
+        "host": "helsinkitimes.fi",
+        "url": "https://www.helsinkitimes.fi/",
+        "last_not_empty_rss": "2024-12-02 07:20:33.904657",
+        "last_filtered_by_keywords": "2024-11-26 15:40:34.294613",
+        "last_approved_news": "2024-11-25 04:10:25.757036",
+        "last_success_parsing": "2024-11-25 04:10:43.498837",
+        "last_success_publishing": "2024-11-25 04:10:54.327363"
+    },
+    {
+        "host": "ru.investing.com",
+        "url": "https://ru.investing.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.098118",
+        "last_filtered_by_keywords": "2024-11-30 06:00:34.731518",
+        "last_approved_news": "2024-11-03 07:10:40.944659",
+        "last_success_parsing": "2024-11-03 07:10:59.090946",
+        "last_success_publishing": "2024-11-03 07:11:08.019044"
+    },
+    {
+        "host": "tribuneindia.com",
+        "url": "https://www.tribuneindia.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.917840",
+        "last_filtered_by_keywords": "2024-12-01 02:30:34.401750",
+        "last_approved_news": "2024-11-07 10:20:44.746837",
+        "last_success_parsing": "2024-11-07 10:38:16.866300",
+        "last_success_publishing": "2024-11-07 10:38:26.155397"
     },
     {
         "host": "currenttime.tv",
@@ -432,31 +387,85 @@
         "last_success_publishing": "2024-08-21 10:01:53.856814"
     },
     {
-        "host": "bankfax.ru",
-        "url": "https://www.bankfax.ru/",
-        "last_not_empty_rss": "2024-12-02 07:00:16.374003",
-        "last_filtered_by_keywords": "2024-11-28 23:00:19.342695",
-        "last_approved_news": "2024-08-09 07:10:23.157798",
-        "last_success_parsing": "2024-08-09 04:30:42.292146",
-        "last_success_publishing": "2024-08-09 04:30:54.022229"
+        "host": "nypost.com",
+        "url": "https://nypost.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:35.071763",
+        "last_filtered_by_keywords": "2024-12-02 03:31:33.045807",
+        "last_approved_news": "2024-12-01 23:53:00.141973",
+        "last_success_parsing": "2024-12-01 23:58:11.518165",
+        "last_success_publishing": "2024-12-01 23:58:20.439112"
+    },
+    {
+        "host": "dailysabah.com",
+        "url": "https://www.dailysabah.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:35.723539",
+        "last_filtered_by_keywords": "2024-12-01 14:10:20.844795",
+        "last_approved_news": "2024-12-01 14:10:23.272224",
+        "last_success_parsing": "2024-12-01 14:10:42.003446",
+        "last_success_publishing": "2024-12-01 14:10:57.289407"
     },
     {
         "host": "businesstimes.com.sg/singapore",
         "url": "https://www.businesstimes.com.sg/singapore",
-        "last_not_empty_rss": "2024-12-02 07:00:17.113522",
+        "last_not_empty_rss": "2024-12-02 07:20:41.331057",
         "last_filtered_by_keywords": "2024-12-01 16:10:24.493736",
         "last_approved_news": "2024-11-08 01:31:47.767730",
         "last_success_parsing": "2024-11-08 01:31:55.170989",
         "last_success_publishing": "2024-11-08 01:32:11.998736"
     },
     {
+        "host": "publico.es",
+        "url": "https://publico.es/",
+        "last_not_empty_rss": "2024-12-02 07:20:56.225012",
+        "last_filtered_by_keywords": "2024-12-01 20:40:33.487658",
+        "last_approved_news": "2024-11-30 21:10:57.031361",
+        "last_success_parsing": "2024-11-30 21:31:06.371833",
+        "last_success_publishing": "2024-11-30 21:31:37.500141"
+    },
+    {
+        "host": "021.rs",
+        "url": "https://www.021.rs/",
+        "last_not_empty_rss": "2024-12-02 07:30:10.486784",
+        "last_filtered_by_keywords": "2024-12-02 07:00:14.081311",
+        "last_approved_news": null,
+        "last_success_parsing": null,
+        "last_success_publishing": null
+    },
+    {
+        "host": "bankfax.ru",
+        "url": "https://www.bankfax.ru/",
+        "last_not_empty_rss": "2024-12-02 07:30:10.565842",
+        "last_filtered_by_keywords": "2024-11-28 23:00:19.342695",
+        "last_approved_news": "2024-08-09 07:10:23.157798",
+        "last_success_parsing": "2024-08-09 04:30:42.292146",
+        "last_success_publishing": "2024-08-09 04:30:54.022229"
+    },
+    {
+        "host": "aljazeera.com",
+        "url": "https://www.aljazeera.com/",
+        "last_not_empty_rss": "2024-12-02 07:30:11.465063",
+        "last_filtered_by_keywords": "2024-12-01 21:10:10.841546",
+        "last_approved_news": "2024-11-30 03:10:28.435720",
+        "last_success_parsing": "2024-11-30 03:10:33.038504",
+        "last_success_publishing": "2024-11-30 03:10:43.554062"
+    },
+    {
         "host": "bssnews.net",
         "url": "https://www.bssnews.net/",
-        "last_not_empty_rss": "2024-12-01 01:40:14.575926",
+        "last_not_empty_rss": "2024-12-02 07:30:13.878182",
         "last_filtered_by_keywords": "2024-11-28 17:30:14.812564",
         "last_approved_news": "2024-11-28 15:00:30.232461",
         "last_success_parsing": "2024-11-28 15:00:48.106981",
         "last_success_publishing": "2024-11-28 15:01:55.112813"
+    },
+    {
+        "host": "dw.com",
+        "url": "https://www.dw.com/",
+        "last_not_empty_rss": "2024-12-02 07:30:17.214267",
+        "last_filtered_by_keywords": "2024-11-30 09:40:23.281280",
+        "last_approved_news": "2024-11-27 11:30:31.782386",
+        "last_success_parsing": null,
+        "last_success_publishing": null
     },
     {
         "host": "africanews.com",
@@ -468,117 +477,45 @@
         "last_success_publishing": "2024-07-02 18:40:43.500442"
     },
     {
-        "host": "eurogamer.net",
-        "url": "https://www.eurogamer.net/",
-        "last_not_empty_rss": "2024-12-02 06:50:30.606312",
-        "last_filtered_by_keywords": "2024-11-26 11:00:27.623770",
-        "last_approved_news": "2024-11-15 17:50:28.243697",
-        "last_success_parsing": "2024-11-15 17:51:00.347113",
-        "last_success_publishing": "2024-11-15 17:51:10.468966"
-    },
-    {
-        "host": "dailyfinland.fi",
-        "url": "https://dailyfinland.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:25.142781",
-        "last_filtered_by_keywords": "2024-12-01 21:50:22.932954",
-        "last_approved_news": "2024-12-01 21:50:25.634964",
-        "last_success_parsing": "2024-12-01 21:50:30.115745",
-        "last_success_publishing": "2024-12-01 21:50:37.474708"
-    },
-    {
-        "host": "eldiariocantabria.publico.es",
-        "url": "https://eldiariocantabria.publico.es/",
-        "last_not_empty_rss": "2024-12-02 06:50:29.150101",
-        "last_filtered_by_keywords": "2024-11-30 19:30:23.470987",
-        "last_approved_news": "2024-11-30 12:50:25.553677",
-        "last_success_parsing": "2024-11-30 12:50:27.789717",
-        "last_success_publishing": "2024-11-30 12:50:36.747348"
-    },
-    {
-        "host": "elperiodico.com",
-        "url": "https://www.elperiodico.com/es/",
-        "last_not_empty_rss": "2024-12-02 06:50:34.402614",
-        "last_filtered_by_keywords": "2024-12-01 13:20:25.469507",
-        "last_approved_news": "2024-11-29 13:00:22.690595",
-        "last_success_parsing": "2024-11-29 13:00:43.051430",
-        "last_success_publishing": "2024-11-29 13:01:07.639703"
-    },
-    {
-        "host": "larazon.es",
-        "url": "https://www.larazon.es/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.382085",
-        "last_filtered_by_keywords": "2024-12-02 01:00:30.659594",
-        "last_approved_news": "2024-12-02 01:01:31.541317",
-        "last_success_parsing": "2024-12-02 01:01:36.283056",
-        "last_success_publishing": "2024-12-02 01:01:51.028124"
-    },
-    {
-        "host": "newsib.net",
-        "url": "https://newsib.net/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.610317",
-        "last_filtered_by_keywords": "2024-12-02 04:21:01.638139",
-        "last_approved_news": "2024-10-18 13:00:51.998198",
-        "last_success_parsing": "2024-10-18 13:00:57.519053",
-        "last_success_publishing": "2024-10-18 13:01:32.303512"
-    },
-    {
-        "host": "newsvl.ru",
-        "url": "https://www.newsvl.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:39.789958",
-        "last_filtered_by_keywords": "2024-11-29 10:30:35.817375",
-        "last_approved_news": "2024-10-05 02:00:35.502366",
-        "last_success_parsing": "2024-10-05 02:00:52.935129",
-        "last_success_publishing": "2024-10-05 02:01:02.973226"
-    },
-    {
-        "host": "themayor.eu",
-        "url": "https://www.themayor.eu/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.330657",
-        "last_filtered_by_keywords": "2024-10-03 08:41:35.403915",
-        "last_approved_news": "2024-09-05 08:30:45.911440",
-        "last_success_parsing": "2024-09-05 09:15:54.720347",
-        "last_success_publishing": "2024-09-05 09:16:11.152042"
-    },
-    {
-        "host": "rte.ie",
-        "url": "https://www.rte.ie/",
-        "last_not_empty_rss": "2024-12-02 06:50:42.012958",
-        "last_filtered_by_keywords": "2024-11-29 08:40:49.010236",
-        "last_approved_news": "2024-11-29 08:40:55.183650",
-        "last_success_parsing": "2024-11-29 08:41:13.078173",
-        "last_success_publishing": "2024-11-29 08:41:41.985335"
-    },
-    {
         "host": "rockpapershotgun.com",
         "url": "https://www.rockpapershotgun.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:47.274927",
+        "last_not_empty_rss": "2024-12-02 07:20:36.343965",
         "last_filtered_by_keywords": "2024-11-29 17:10:36.977563",
         "last_approved_news": "2024-11-20 12:40:37.124400",
         "last_success_parsing": "2024-11-20 12:45:48.019330",
         "last_success_publishing": "2024-11-20 12:46:01.891645"
     },
     {
-        "host": "balkaninsight.com",
-        "url": "https://balkaninsight.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:16.750346",
-        "last_filtered_by_keywords": "2024-11-20 14:30:19.441224",
-        "last_approved_news": "2024-11-20 14:30:21.776503",
+        "host": "rte.ie",
+        "url": "https://www.rte.ie/",
+        "last_not_empty_rss": "2024-12-02 07:20:36.837316",
+        "last_filtered_by_keywords": "2024-11-29 08:40:49.010236",
+        "last_approved_news": "2024-11-29 08:40:55.183650",
+        "last_success_parsing": "2024-11-29 08:41:13.078173",
+        "last_success_publishing": "2024-11-29 08:41:41.985335"
+    },
+    {
+        "host": "dailyfinland.fi",
+        "url": "https://dailyfinland.fi/",
+        "last_not_empty_rss": "2024-12-02 07:20:41.904870",
+        "last_filtered_by_keywords": "2024-12-01 21:50:22.932954",
+        "last_approved_news": "2024-12-01 21:50:25.634964",
+        "last_success_parsing": "2024-12-01 21:50:30.115745",
+        "last_success_publishing": "2024-12-01 21:50:37.474708"
+    },
+    {
+        "host": "cmkos.cz",
+        "url": "https://www.cmkos.cz/",
+        "last_not_empty_rss": "2024-12-02 07:20:43.901123",
+        "last_filtered_by_keywords": "2024-11-29 08:10:22.503336",
+        "last_approved_news": null,
         "last_success_parsing": null,
         "last_success_publishing": null
     },
     {
-        "host": "bankier.pl",
-        "url": "https://www.bankier.pl/",
-        "last_not_empty_rss": "2024-12-02 07:00:16.648413",
-        "last_filtered_by_keywords": "2024-12-02 07:00:17.261272",
-        "last_approved_news": "2024-12-01 10:30:24.577205",
-        "last_success_parsing": "2024-12-01 11:05:33.862165",
-        "last_success_publishing": "2024-12-01 11:05:46.313926"
-    },
-    {
         "host": "brusselstimes.com",
         "url": "https://www.brusselstimes.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:18.018343",
+        "last_not_empty_rss": "2024-12-02 07:30:12.285052",
         "last_filtered_by_keywords": "2024-12-02 05:50:12.370658",
         "last_approved_news": "2024-12-01 22:20:16.162155",
         "last_success_parsing": "2024-12-01 22:20:33.838507",
@@ -587,101 +524,128 @@
     {
         "host": "dailymail.co.uk",
         "url": "https://www.dailyfinland.fi/",
-        "last_not_empty_rss": "2024-12-02 07:00:19.475125",
+        "last_not_empty_rss": "2024-12-02 07:30:14.892235",
         "last_filtered_by_keywords": "2024-12-02 02:20:24.340874",
         "last_approved_news": "2024-12-02 02:20:29.157238",
         "last_success_parsing": "2024-12-02 02:30:38.164871",
         "last_success_publishing": "2024-12-02 02:31:37.586741"
     },
     {
-        "host": "cmkos.cz",
-        "url": "https://www.cmkos.cz/",
-        "last_not_empty_rss": "2024-12-02 07:00:20.615808",
-        "last_filtered_by_keywords": "2024-11-29 08:10:22.503336",
-        "last_approved_news": null,
+        "host": "bankier.pl",
+        "url": "https://www.bankier.pl/",
+        "last_not_empty_rss": "2024-12-02 07:20:12.224015",
+        "last_filtered_by_keywords": "2024-12-02 07:10:28.493989",
+        "last_approved_news": "2024-12-02 07:00:21.327415",
+        "last_success_parsing": "2024-12-02 07:00:28.347478",
+        "last_success_publishing": "2024-12-02 07:01:14.100708"
+    },
+    {
+        "host": "balkaninsight.com",
+        "url": "https://balkaninsight.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:21.038178",
+        "last_filtered_by_keywords": "2024-11-20 14:30:19.441224",
+        "last_approved_news": "2024-11-20 14:30:21.776503",
         "last_success_parsing": null,
         "last_success_publishing": null
     },
     {
-        "host": "cnn.com",
-        "url": "https://edition.cnn.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:20.755545",
-        "last_filtered_by_keywords": "2024-07-05 12:00:26.478765",
-        "last_approved_news": "2024-07-05 12:00:28.692819",
-        "last_success_parsing": "2024-07-05 12:00:31.225209",
-        "last_success_publishing": null
+        "host": "eldiariocantabria.publico.es",
+        "url": "https://eldiariocantabria.publico.es/",
+        "last_not_empty_rss": "2024-12-02 07:20:23.597242",
+        "last_filtered_by_keywords": "2024-11-30 19:30:23.470987",
+        "last_approved_news": "2024-11-30 12:50:25.553677",
+        "last_success_parsing": "2024-11-30 12:50:27.789717",
+        "last_success_publishing": "2024-11-30 12:50:36.747348"
     },
     {
-        "host": "bnn-news.com",
-        "url": "https://bnn-news.com/",
-        "last_not_empty_rss": "2024-11-30 18:00:17.633484",
-        "last_filtered_by_keywords": "2024-11-29 07:30:23.506224",
-        "last_approved_news": "2024-11-26 11:50:17.259963",
-        "last_success_parsing": "2024-11-26 11:50:35.606374",
-        "last_success_publishing": "2024-11-26 11:51:24.946912"
+        "host": "larazon.es",
+        "url": "https://www.larazon.es/",
+        "last_not_empty_rss": "2024-12-02 07:20:28.490042",
+        "last_filtered_by_keywords": "2024-12-02 01:00:30.659594",
+        "last_approved_news": "2024-12-02 01:01:31.541317",
+        "last_success_parsing": "2024-12-02 01:01:36.283056",
+        "last_success_publishing": "2024-12-02 01:01:51.028124"
     },
     {
-        "host": "irishexaminer.com",
-        "url": "https://www.irishexaminer.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.004261",
-        "last_filtered_by_keywords": "2024-12-01 08:30:24.380436",
-        "last_approved_news": "2024-11-29 17:20:39.707986",
-        "last_success_parsing": "2024-11-29 13:10:53.042301",
-        "last_success_publishing": "2024-11-29 13:11:41.914577"
+        "host": "newsvl.ru",
+        "url": "https://www.newsvl.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.977038",
+        "last_filtered_by_keywords": "2024-11-29 10:30:35.817375",
+        "last_approved_news": "2024-10-05 02:00:35.502366",
+        "last_success_parsing": "2024-10-05 02:00:52.935129",
+        "last_success_publishing": "2024-10-05 02:01:02.973226"
     },
     {
-        "host": "greekreporter.com",
-        "url": "https://greekreporter.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.648181",
-        "last_filtered_by_keywords": "2024-12-01 04:10:24.492068",
-        "last_approved_news": "2024-12-01 04:10:26.761570",
-        "last_success_parsing": "2024-08-23 22:10:43.711157",
-        "last_success_publishing": null
+        "host": "newsib.net",
+        "url": "https://newsib.net/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.024262",
+        "last_filtered_by_keywords": "2024-12-02 04:21:01.638139",
+        "last_approved_news": "2024-10-18 13:00:51.998198",
+        "last_success_parsing": "2024-10-18 13:00:57.519053",
+        "last_success_publishing": "2024-10-18 13:01:32.303512"
     },
     {
-        "host": "local.fo",
-        "url": "https://local.fo/",
-        "last_not_empty_rss": "2024-12-02 06:50:37.799935",
-        "last_filtered_by_keywords": "2024-10-05 13:40:32.426431",
-        "last_approved_news": "2024-06-09 23:10:46.153797",
-        "last_success_parsing": "2024-06-09 23:10:51.361880",
-        "last_success_publishing": "2024-06-09 23:10:57.332312"
+        "host": "elperiodico.com",
+        "url": "https://www.elperiodico.com/es/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.916763",
+        "last_filtered_by_keywords": "2024-12-01 13:20:25.469507",
+        "last_approved_news": "2024-11-29 13:00:22.690595",
+        "last_success_parsing": "2024-11-29 13:00:43.051430",
+        "last_success_publishing": "2024-11-29 13:01:07.639703"
     },
     {
-        "host": "washingtonpost.com",
-        "url": "https://www.washingtonpost.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.298971",
-        "last_filtered_by_keywords": "2024-12-02 05:40:34.726867",
-        "last_approved_news": "2024-12-01 07:50:39.843002",
-        "last_success_parsing": "2024-10-18 18:11:19.606486",
-        "last_success_publishing": "2024-10-18 18:13:50.796268"
+        "host": "themayor.eu",
+        "url": "https://www.themayor.eu/",
+        "last_not_empty_rss": "2024-12-02 07:20:35.729680",
+        "last_filtered_by_keywords": "2024-10-03 08:41:35.403915",
+        "last_approved_news": "2024-09-05 08:30:45.911440",
+        "last_success_parsing": "2024-09-05 09:15:54.720347",
+        "last_success_publishing": "2024-09-05 09:16:11.152042"
     },
     {
         "host": "nur.kz",
         "url": "https://www.nur.kz/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.847940",
+        "last_not_empty_rss": "2024-12-02 07:20:38.493143",
         "last_filtered_by_keywords": "2024-12-02 06:50:42.539451",
         "last_approved_news": "2024-11-11 08:10:44.874788",
         "last_success_parsing": "2024-11-11 08:11:02.376843",
         "last_success_publishing": "2024-11-11 08:11:28.901408"
     },
     {
+        "host": "washingtonpost.com",
+        "url": "https://www.washingtonpost.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:40.424344",
+        "last_filtered_by_keywords": "2024-12-02 05:40:34.726867",
+        "last_approved_news": "2024-12-01 07:50:39.843002",
+        "last_success_parsing": "2024-10-18 18:11:19.606486",
+        "last_success_publishing": "2024-10-18 18:13:50.796268"
+    },
+    {
+        "host": "bnn-news.com",
+        "url": "https://bnn-news.com/",
+        "last_not_empty_rss": "2024-12-02 07:30:10.550116",
+        "last_filtered_by_keywords": "2024-11-29 07:30:23.506224",
+        "last_approved_news": "2024-11-26 11:50:17.259963",
+        "last_success_parsing": "2024-11-26 11:50:35.606374",
+        "last_success_publishing": "2024-11-26 11:51:24.946912"
+    },
+    {
         "host": "abc.net.au",
         "url": "https://www.abc.net.au/",
-        "last_not_empty_rss": "2024-12-02 07:00:11.761682",
+        "last_not_empty_rss": "2024-12-02 07:30:12.935806",
         "last_filtered_by_keywords": "2024-12-02 05:30:12.953273",
         "last_approved_news": "2024-12-02 00:40:14.950247",
         "last_success_parsing": "2024-12-02 00:40:32.846129",
         "last_success_publishing": "2024-12-02 00:40:44.882572"
     },
     {
-        "host": "apnews.com",
-        "url": "https://apnews.com/",
-        "last_not_empty_rss": "2024-12-02 07:00:14.536278",
-        "last_filtered_by_keywords": "2024-12-02 00:20:12.840502",
-        "last_approved_news": "2024-12-01 08:00:15.237440",
-        "last_success_parsing": "2024-12-01 08:00:33.940622",
-        "last_success_publishing": "2024-12-01 08:00:45.150499"
+        "host": "cbc.ca",
+        "url": "https://www.cbc.ca/",
+        "last_not_empty_rss": "2024-12-02 07:30:16.843824",
+        "last_filtered_by_keywords": "2024-12-02 00:50:22.153075",
+        "last_approved_news": "2024-12-02 00:50:23.923771",
+        "last_success_parsing": null,
+        "last_success_publishing": null
     },
     {
         "host": "economist.com",
@@ -693,18 +657,72 @@
         "last_success_publishing": "2024-12-01 16:50:52.895521"
     },
     {
-        "host": "cbc.ca",
-        "url": "https://www.cbc.ca/",
-        "last_not_empty_rss": "2024-12-02 07:00:20.050147",
-        "last_filtered_by_keywords": "2024-12-02 00:50:22.153075",
-        "last_approved_news": "2024-12-02 00:50:23.923771",
-        "last_success_parsing": null,
+        "host": "apnews.com",
+        "url": "https://apnews.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:21.805730",
+        "last_filtered_by_keywords": "2024-12-02 00:20:12.840502",
+        "last_approved_news": "2024-12-01 08:00:15.237440",
+        "last_success_parsing": "2024-12-01 08:00:33.940622",
+        "last_success_publishing": "2024-12-01 08:00:45.150499"
+    },
+    {
+        "host": "cnn.com",
+        "url": "https://edition.cnn.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:22.542382",
+        "last_filtered_by_keywords": "2024-07-05 12:00:26.478765",
+        "last_approved_news": "2024-07-05 12:00:28.692819",
+        "last_success_parsing": "2024-07-05 12:00:31.225209",
         "last_success_publishing": null
+    },
+    {
+        "host": "greekreporter.com",
+        "url": "https://greekreporter.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:27.261992",
+        "last_filtered_by_keywords": "2024-12-01 04:10:24.492068",
+        "last_approved_news": "2024-12-01 04:10:26.761570",
+        "last_success_parsing": "2024-08-23 22:10:43.711157",
+        "last_success_publishing": null
+    },
+    {
+        "host": "local.fo",
+        "url": "https://local.fo/",
+        "last_not_empty_rss": "2024-12-02 07:20:28.970805",
+        "last_filtered_by_keywords": "2024-10-05 13:40:32.426431",
+        "last_approved_news": "2024-06-09 23:10:46.153797",
+        "last_success_parsing": "2024-06-09 23:10:51.361880",
+        "last_success_publishing": "2024-06-09 23:10:57.332312"
+    },
+    {
+        "host": "irishexaminer.com",
+        "url": "https://www.irishexaminer.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.861993",
+        "last_filtered_by_keywords": "2024-12-01 08:30:24.380436",
+        "last_approved_news": "2024-11-29 17:20:39.707986",
+        "last_success_parsing": "2024-11-29 13:10:53.042301",
+        "last_success_publishing": "2024-11-29 13:11:41.914577"
+    },
+    {
+        "host": "lada.kz",
+        "url": "https://www.lada.kz/",
+        "last_not_empty_rss": "2024-12-02 07:20:37.097025",
+        "last_filtered_by_keywords": "2024-12-02 05:10:28.448665",
+        "last_approved_news": "2024-11-22 14:50:39.593993",
+        "last_success_parsing": "2024-11-22 07:21:03.941636",
+        "last_success_publishing": "2024-11-22 07:21:12.339866"
+    },
+    {
+        "host": "businesstimes.com.sg/international",
+        "url": "https://www.businesstimes.com.sg/international",
+        "last_not_empty_rss": "2024-12-02 07:30:13.208291",
+        "last_filtered_by_keywords": "2024-12-02 06:31:39.744563",
+        "last_approved_news": "2024-11-29 09:11:44.489928",
+        "last_success_parsing": "2024-11-29 09:11:47.848169",
+        "last_success_publishing": "2024-11-29 09:12:03.734066"
     },
     {
         "host": "citynews.ca",
         "url": "https://www.cbc.ca/",
-        "last_not_empty_rss": "2024-12-02 06:50:17.576024",
+        "last_not_empty_rss": "2024-12-02 07:30:14.675026",
         "last_filtered_by_keywords": "2024-12-01 22:20:15.877650",
         "last_approved_news": "2024-12-01 22:20:19.727729",
         "last_success_parsing": "2024-12-01 22:20:38.112238",
@@ -713,92 +731,20 @@
     {
         "host": "elespanol.com",
         "url": "https://www.elespanol.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:27.774007",
+        "last_not_empty_rss": "2024-12-02 07:30:17.342186",
         "last_filtered_by_keywords": "2024-11-29 14:40:24.841823",
         "last_approved_news": "2024-11-29 14:41:38.027690",
         "last_success_parsing": "2024-11-29 11:20:47.595081",
         "last_success_publishing": "2024-11-29 11:21:39.325876"
     },
     {
-        "host": "forbes.com",
-        "url": "https://www.forbes.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:31.287903",
-        "last_filtered_by_keywords": "2024-12-02 03:10:30.390100",
-        "last_approved_news": "2024-12-01 17:30:26.655386",
-        "last_success_parsing": "2024-12-01 18:20:41.325139",
-        "last_success_publishing": "2024-12-01 18:20:55.454252"
-    },
-    {
-        "host": "okdiario.com",
-        "url": "https://okdiario.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.410636",
-        "last_filtered_by_keywords": "2024-12-01 05:20:38.429179",
-        "last_approved_news": "2024-11-29 11:40:38.296821",
-        "last_success_parsing": "2024-11-29 11:40:56.278016",
-        "last_success_publishing": "2024-11-29 11:41:24.011056"
-    },
-    {
-        "host": "politico.eu",
-        "url": "https://www.politico.eu/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.879835",
-        "last_filtered_by_keywords": "2024-12-02 06:00:31.522805",
-        "last_approved_news": "2024-11-18 16:20:38.610047",
-        "last_success_parsing": null,
-        "last_success_publishing": null
-    },
-    {
-        "host": "mk.ru",
-        "url": "https://www.mk.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:37.877707",
-        "last_filtered_by_keywords": "2024-12-02 06:30:34.926421",
-        "last_approved_news": "2024-12-01 09:20:42.008698",
-        "last_success_parsing": "2024-12-01 09:20:44.668875",
-        "last_success_publishing": "2024-12-01 09:20:52.715124"
-    },
-    {
-        "host": "lada.kz",
-        "url": "https://www.lada.kz/",
-        "last_not_empty_rss": "2024-12-02 06:50:39.836720",
-        "last_filtered_by_keywords": "2024-12-02 05:10:28.448665",
-        "last_approved_news": "2024-11-22 14:50:39.593993",
-        "last_success_parsing": "2024-11-22 07:21:03.941636",
-        "last_success_publishing": "2024-11-22 07:21:12.339866"
-    },
-    {
-        "host": "rosbalt.ru",
-        "url": "https://www.rosbalt.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.545963",
-        "last_filtered_by_keywords": "2024-12-01 10:50:36.737188",
-        "last_approved_news": "2024-11-30 16:30:38.104332",
-        "last_success_parsing": "2024-11-30 16:30:43.869779",
-        "last_success_publishing": "2024-11-30 16:30:53.262624"
-    },
-    {
-        "host": "rg.ru",
-        "url": "https://rg.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:44.579645",
-        "last_filtered_by_keywords": "2024-12-02 06:20:28.851824",
-        "last_approved_news": "2024-12-01 15:50:37.186341",
-        "last_success_parsing": "2024-12-01 15:50:45.011506",
-        "last_success_publishing": "2024-12-01 15:50:51.810943"
-    },
-    {
-        "host": "vedomosti.ru",
-        "url": "https://www.vedomosti.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:46.168367",
-        "last_filtered_by_keywords": null,
-        "last_approved_news": null,
-        "last_success_parsing": null,
-        "last_success_publishing": null
-    },
-    {
-        "host": "businesstimes.com.sg/international",
-        "url": "https://www.businesstimes.com.sg/international",
-        "last_not_empty_rss": "2024-12-02 07:00:15.252673",
-        "last_filtered_by_keywords": "2024-12-02 06:31:39.744563",
-        "last_approved_news": "2024-11-29 09:11:44.489928",
-        "last_success_parsing": "2024-11-29 09:11:47.848169",
-        "last_success_publishing": "2024-11-29 09:12:03.734066"
+        "host": "eleconomista.com.mx",
+        "url": "https://www.eleconomista.com.mx/",
+        "last_not_empty_rss": "2024-12-02 07:20:20.019920",
+        "last_filtered_by_keywords": "2024-12-01 12:00:22.429796",
+        "last_approved_news": "2024-10-23 07:40:31.054029",
+        "last_success_parsing": "2024-10-23 07:40:48.818760",
+        "last_success_publishing": "2024-10-20 15:30:59.521973"
     },
     {
         "host": "logist.today",
@@ -810,13 +756,67 @@
         "last_success_publishing": null
     },
     {
-        "host": "eleconomista.com.mx",
-        "url": "https://www.eleconomista.com.mx/",
-        "last_not_empty_rss": "2024-12-02 07:00:17.688763",
-        "last_filtered_by_keywords": "2024-12-01 12:00:22.429796",
-        "last_approved_news": "2024-10-23 07:40:31.054029",
-        "last_success_parsing": "2024-10-23 07:40:48.818760",
-        "last_success_publishing": "2024-10-20 15:30:59.521973"
+        "host": "forbes.com",
+        "url": "https://www.forbes.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:29.283488",
+        "last_filtered_by_keywords": "2024-12-02 03:10:30.390100",
+        "last_approved_news": "2024-12-01 17:30:26.655386",
+        "last_success_parsing": "2024-12-01 18:20:41.325139",
+        "last_success_publishing": "2024-12-01 18:20:55.454252"
+    },
+    {
+        "host": "politico.eu",
+        "url": "https://www.politico.eu/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.194231",
+        "last_filtered_by_keywords": "2024-12-02 06:00:31.522805",
+        "last_approved_news": "2024-11-18 16:20:38.610047",
+        "last_success_parsing": null,
+        "last_success_publishing": null
+    },
+    {
+        "host": "okdiario.com",
+        "url": "https://okdiario.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.769398",
+        "last_filtered_by_keywords": "2024-12-01 05:20:38.429179",
+        "last_approved_news": "2024-11-29 11:40:38.296821",
+        "last_success_parsing": "2024-11-29 11:40:56.278016",
+        "last_success_publishing": "2024-11-29 11:41:24.011056"
+    },
+    {
+        "host": "rosbalt.ru",
+        "url": "https://www.rosbalt.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.860784",
+        "last_filtered_by_keywords": "2024-12-01 10:50:36.737188",
+        "last_approved_news": "2024-11-30 16:30:38.104332",
+        "last_success_parsing": "2024-11-30 16:30:43.869779",
+        "last_success_publishing": "2024-11-30 16:30:53.262624"
+    },
+    {
+        "host": "rg.ru",
+        "url": "https://rg.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:33.931890",
+        "last_filtered_by_keywords": "2024-12-02 07:20:33.560812",
+        "last_approved_news": "2024-12-01 15:50:37.186341",
+        "last_success_parsing": "2024-12-01 15:50:45.011506",
+        "last_success_publishing": "2024-12-01 15:50:51.810943"
+    },
+    {
+        "host": "vedomosti.ru",
+        "url": "https://www.vedomosti.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.932728",
+        "last_filtered_by_keywords": null,
+        "last_approved_news": null,
+        "last_success_parsing": null,
+        "last_success_publishing": null
+    },
+    {
+        "host": "mk.ru",
+        "url": "https://www.mk.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:35.246056",
+        "last_filtered_by_keywords": "2024-12-02 07:10:47.329447",
+        "last_approved_news": "2024-12-01 09:20:42.008698",
+        "last_success_parsing": "2024-12-01 09:20:44.668875",
+        "last_success_publishing": "2024-12-01 09:20:52.715124"
     },
     {
         "host": "schengen.news",
@@ -830,25 +830,16 @@
     {
         "host": "greekcitytimes.com",
         "url": "https://greekcitytimes.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.146593",
+        "last_not_empty_rss": "2024-12-02 07:20:28.701497",
         "last_filtered_by_keywords": "2024-11-30 15:10:30.246613",
         "last_approved_news": "2024-11-20 08:20:25.299862",
         "last_success_parsing": "2024-06-02 03:50:43.313359",
         "last_success_publishing": null
     },
     {
-        "host": "money.pl",
-        "url": "https://www.money.pl/",
-        "last_not_empty_rss": "2024-12-02 06:50:36.891511",
-        "last_filtered_by_keywords": "2024-11-30 14:10:36.275971",
-        "last_approved_news": "2024-11-29 18:30:38.383433",
-        "last_success_parsing": "2024-11-25 18:01:00.321307",
-        "last_success_publishing": "2024-11-25 18:01:13.628002"
-    },
-    {
         "host": "iz.ru",
         "url": "https://iz.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:37.072321",
+        "last_not_empty_rss": "2024-12-02 07:20:30.503240",
         "last_filtered_by_keywords": "2024-12-02 06:30:34.646246",
         "last_approved_news": "2024-12-01 13:30:30.314519",
         "last_success_parsing": "2024-12-01 13:30:37.071956",
@@ -857,97 +848,115 @@
     {
         "host": "novinite.com",
         "url": "https://www.novinite.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:39.271275",
+        "last_not_empty_rss": "2024-12-02 07:20:30.505576",
         "last_filtered_by_keywords": "2024-11-30 22:00:29.362931",
         "last_approved_news": "2024-11-28 22:00:43.382522",
         "last_success_parsing": "2024-11-28 22:00:47.289268",
         "last_success_publishing": "2024-11-28 22:00:54.685897"
     },
     {
-        "host": "mixnews.lv",
-        "url": "https://mixnews.lv/",
-        "last_not_empty_rss": "2024-12-02 06:50:35.321036",
-        "last_filtered_by_keywords": "2024-12-01 18:00:34.228070",
-        "last_approved_news": "2024-11-29 18:40:45.967804",
-        "last_success_parsing": "2024-11-26 11:10:59.847918",
-        "last_success_publishing": "2024-11-26 11:11:20.881406"
+        "host": "money.pl",
+        "url": "https://www.money.pl/",
+        "last_not_empty_rss": "2024-12-02 07:20:31.566931",
+        "last_filtered_by_keywords": "2024-11-30 14:10:36.275971",
+        "last_approved_news": "2024-11-29 18:30:38.383433",
+        "last_success_parsing": "2024-11-25 18:01:00.321307",
+        "last_success_publishing": "2024-11-25 18:01:13.628002"
     },
     {
         "host": "tbsnews.net",
         "url": "https://www.tbsnews.net/",
-        "last_not_empty_rss": "2024-12-02 06:50:37.945987",
+        "last_not_empty_rss": "2024-12-02 07:20:37.136636",
         "last_filtered_by_keywords": "2024-12-01 13:40:38.115529",
         "last_approved_news": "2024-11-28 13:50:39.476472",
         "last_success_parsing": "2024-11-28 13:50:57.522436",
         "last_success_publishing": "2024-11-28 13:51:34.992952"
     },
     {
-        "host": "telegraph.co.uk",
-        "url": "https://www.telegraph.co.uk/",
-        "last_not_empty_rss": "2024-12-02 06:50:39.357880",
-        "last_filtered_by_keywords": "2024-12-01 15:30:34.680293",
-        "last_approved_news": "2024-11-29 17:00:45.519367",
-        "last_success_parsing": "2024-11-20 15:31:13.871808",
-        "last_success_publishing": "2024-11-20 09:21:45.283184"
-    },
-    {
-        "host": "reuters.com",
-        "url": "https://www.reuters.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:40.320798",
-        "last_filtered_by_keywords": "2024-12-02 05:50:32.130397",
-        "last_approved_news": "2024-11-30 04:40:38.022685",
-        "last_success_parsing": null,
-        "last_success_publishing": null
-    },
-    {
         "host": "ura.news",
         "url": "https://ura.news/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.503864",
+        "last_not_empty_rss": "2024-12-02 07:20:39.307717",
         "last_filtered_by_keywords": "2024-12-02 06:00:37.744995",
         "last_approved_news": "2024-12-02 04:24:09.199129",
         "last_success_parsing": "2024-12-02 04:24:11.595580",
         "last_success_publishing": "2024-12-02 04:24:22.203101"
     },
     {
+        "host": "mixnews.lv",
+        "url": "https://mixnews.lv/",
+        "last_not_empty_rss": "2024-12-02 07:20:30.488895",
+        "last_filtered_by_keywords": "2024-12-01 18:00:34.228070",
+        "last_approved_news": "2024-11-29 18:40:45.967804",
+        "last_success_parsing": "2024-11-26 11:10:59.847918",
+        "last_success_publishing": "2024-11-26 11:11:20.881406"
+    },
+    {
         "host": "wszczecinie.pl",
         "url": "https://wszczecinie.pl/",
-        "last_not_empty_rss": "2024-12-02 06:50:42.355804",
+        "last_not_empty_rss": "2024-12-02 07:20:32.541916",
         "last_filtered_by_keywords": "2024-11-22 04:20:34.231045",
         "last_approved_news": "2024-11-20 14:40:37.994659",
         "last_success_parsing": "2024-11-20 14:40:55.539831",
         "last_success_publishing": "2024-11-20 14:31:13.091760"
     },
     {
+        "host": "telegraph.co.uk",
+        "url": "https://www.telegraph.co.uk/",
+        "last_not_empty_rss": "2024-12-02 07:20:34.772793",
+        "last_filtered_by_keywords": "2024-12-01 15:30:34.680293",
+        "last_approved_news": "2024-11-29 17:00:45.519367",
+        "last_success_parsing": "2024-11-20 15:31:13.871808",
+        "last_success_publishing": "2024-11-20 09:21:45.283184"
+    },
+    {
         "host": "unitetheunion.org",
         "url": "https://www.unitetheunion.org/",
-        "last_not_empty_rss": "2024-12-02 06:50:42.376439",
+        "last_not_empty_rss": "2024-12-02 07:20:35.798371",
         "last_filtered_by_keywords": "2024-12-02 04:10:33.315689",
         "last_approved_news": "2024-12-02 04:10:35.425568",
         "last_success_parsing": null,
         "last_success_publishing": null
     },
     {
-        "host": "independent.co.uk",
-        "url": "https://www.independent.co.uk/",
-        "last_not_empty_rss": "2024-12-02 06:50:31.890389",
-        "last_filtered_by_keywords": "2024-12-01 21:00:28.487348",
-        "last_approved_news": "2024-11-29 16:50:41.220253",
-        "last_success_parsing": "2024-11-29 08:20:55.718168",
-        "last_success_publishing": "2024-11-29 08:21:04.345987"
+        "host": "reuters.com",
+        "url": "https://www.reuters.com/",
+        "last_not_empty_rss": "2024-12-02 07:20:36.177516",
+        "last_filtered_by_keywords": "2024-12-02 05:50:32.130397",
+        "last_approved_news": "2024-11-30 04:40:38.022685",
+        "last_success_parsing": null,
+        "last_success_publishing": null
     },
     {
         "host": "sputnik-georgia.ru",
         "url": "https://sputnik-georgia.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:46.700232",
+        "last_not_empty_rss": "2024-12-02 07:20:37.315665",
         "last_filtered_by_keywords": "2024-12-01 22:10:35.334821",
         "last_approved_news": "2024-11-30 18:40:38.395652",
         "last_success_parsing": "2024-11-30 18:40:45.557484",
         "last_success_publishing": "2024-11-30 18:40:53.057004"
     },
     {
+        "host": "independent.co.uk",
+        "url": "https://www.independent.co.uk/",
+        "last_not_empty_rss": "2024-12-02 07:20:26.727938",
+        "last_filtered_by_keywords": "2024-12-01 21:00:28.487348",
+        "last_approved_news": "2024-11-29 16:50:41.220253",
+        "last_success_parsing": "2024-11-29 08:20:55.718168",
+        "last_success_publishing": "2024-11-29 08:21:04.345987"
+    },
+    {
+        "host": "ngs.ru",
+        "url": "https://ngs.ru/",
+        "last_not_empty_rss": "2024-12-02 07:20:41.138865",
+        "last_filtered_by_keywords": "2024-12-02 04:00:33.762744",
+        "last_approved_news": "2024-11-15 14:02:34.652153",
+        "last_success_parsing": "2024-11-15 14:02:43.808639",
+        "last_success_publishing": "2024-11-15 14:02:54.326703"
+    },
+    {
         "host": "huffpost.com",
         "url": "https://www.huffpost.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:42.210351",
+        "last_not_empty_rss": "2024-12-02 07:20:28.015272",
         "last_filtered_by_keywords": "2024-11-25 15:40:28.908826",
         "last_approved_news": "2024-11-25 14:00:34.972849",
         "last_success_parsing": "2024-11-25 14:00:45.886589",
@@ -956,25 +965,16 @@
     {
         "host": "spiegel.de",
         "url": "https://www.spiegel.de/",
-        "last_not_empty_rss": "2024-12-02 06:50:43.298131",
+        "last_not_empty_rss": "2024-12-02 07:20:33.049871",
         "last_filtered_by_keywords": "2024-12-02 06:40:38.750707",
         "last_approved_news": "2024-12-02 06:40:42.477826",
         "last_success_parsing": "2024-12-02 06:40:45.781773",
         "last_success_publishing": "2024-12-02 06:41:31.164343"
     },
     {
-        "host": "ngs.ru",
-        "url": "https://ngs.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:43.894098",
-        "last_filtered_by_keywords": "2024-12-02 04:00:33.762744",
-        "last_approved_news": "2024-11-15 14:02:34.652153",
-        "last_success_parsing": "2024-11-15 14:02:43.808639",
-        "last_success_publishing": "2024-11-15 14:02:54.326703"
-    },
-    {
         "host": "sky.com",
         "url": "https://www.sky.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.436770",
+        "last_not_empty_rss": "2024-12-02 07:20:33.061125",
         "last_filtered_by_keywords": "2024-12-02 01:30:30.731306",
         "last_approved_news": "2024-11-16 18:10:38.316942",
         "last_success_parsing": "2024-11-16 18:10:56.139808",
@@ -983,7 +983,7 @@
     {
         "host": "talouselama.fi",
         "url": "https://www.talouselama.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.877440",
+        "last_not_empty_rss": "2024-12-02 07:20:35.675750",
         "last_filtered_by_keywords": "2024-12-01 06:10:33.964691",
         "last_approved_news": "2024-11-28 08:50:42.225905",
         "last_success_parsing": "2024-11-28 08:51:00.744920",
@@ -992,7 +992,7 @@
     {
         "host": "tengrinews.kz",
         "url": "https://tengrinews.kz/",
-        "last_not_empty_rss": "2024-12-02 06:50:37.591212",
+        "last_not_empty_rss": "2024-12-02 07:20:36.709343",
         "last_filtered_by_keywords": "2024-12-01 23:50:31.434118",
         "last_approved_news": "2024-12-01 23:40:35.276780",
         "last_success_parsing": "2024-12-01 13:30:58.652406",
@@ -1001,7 +1001,7 @@
     {
         "host": "nn.ru",
         "url": "https://www.nn.ru/",
-        "last_not_empty_rss": "2024-12-02 06:50:41.441575",
+        "last_not_empty_rss": "2024-12-02 07:20:34.608581",
         "last_filtered_by_keywords": "2024-11-30 08:20:32.837032",
         "last_approved_news": "2024-11-07 05:50:43.405356",
         "last_success_parsing": "2024-11-07 06:04:04.159665",
@@ -1010,7 +1010,7 @@
     {
         "host": "uusisuomi.fi",
         "url": "https://www.uusisuomi.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:43.274904",
+        "last_not_empty_rss": "2024-12-02 07:20:39.462317",
         "last_filtered_by_keywords": "2024-11-21 17:50:39.874978",
         "last_approved_news": "2024-11-21 17:50:45.227773",
         "last_success_parsing": "2024-11-21 17:51:03.125642",
@@ -1019,7 +1019,7 @@
     {
         "host": "zeit.de",
         "url": "https://www.zeit.de/",
-        "last_not_empty_rss": "2024-12-02 06:50:43.445610",
+        "last_not_empty_rss": "2024-12-02 07:20:39.690158",
         "last_filtered_by_keywords": "2024-12-02 03:40:58.067777",
         "last_approved_news": "2024-12-02 03:42:25.214116",
         "last_success_parsing": "2024-12-02 03:42:42.798353",
@@ -1028,8 +1028,8 @@
     {
         "host": "theguardian.com",
         "url": "https://www.theguardian.com/",
-        "last_not_empty_rss": "2024-12-02 06:50:44.152228",
-        "last_filtered_by_keywords": "2024-12-02 05:20:32.348138",
+        "last_not_empty_rss": "2024-12-02 07:20:34.464450",
+        "last_filtered_by_keywords": "2024-12-02 07:20:35.197994",
         "last_approved_news": "2024-12-02 05:20:35.893223",
         "last_success_parsing": "2024-12-02 05:20:39.104861",
         "last_success_publishing": "2024-12-02 05:20:49.470073"
@@ -1037,7 +1037,7 @@
     {
         "host": "yle.fi",
         "url": "https://yle.fi/",
-        "last_not_empty_rss": "2024-12-02 06:50:38.084511",
+        "last_not_empty_rss": "2024-12-02 07:20:33.279692",
         "last_filtered_by_keywords": "2024-12-01 07:30:34.303753",
         "last_approved_news": "2024-11-27 05:30:48.766763",
         "last_success_parsing": "2024-11-20 23:21:07.075552",
